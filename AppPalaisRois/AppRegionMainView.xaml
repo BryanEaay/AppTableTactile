@@ -1,0 +1,246 @@
+﻿<Window
+	x:Class="AppPalaisRois.AppRegionMainView"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:fluidkit="clr-namespace:FluidKit.Controls;assembly=FluidKit"
+	xmlns:s="http://schemas.microsoft.com/surface/2008"
+	xmlns:sys="clr-namespace:System;assembly=mscorlib"
+	x:Name="Region"
+	Title="Region"
+	Width="1920"
+	Height="1080"
+	Margin="0"
+	Padding="0"
+	WindowState="Maximized"
+	WindowStyle="None">
+
+	<!--  Ressources de la fenêtre  -->
+	<Window.Resources>
+		<DataTemplate x:Key="ListTemplate">
+			<Grid Width="120" Height="120">
+				<Label Panel.ZIndex="1" Background="Gray" />
+				<Image
+					Margin="10"
+					Panel.ZIndex="10"
+					Source="{Binding Background}"
+					Stretch="Uniform" />
+			</Grid>
+		</DataTemplate>
+
+		<DataTemplate x:Key="Background">
+			<Border
+				x:Name="ElementVisual"
+				Grid.Row="0"
+				Padding="0"
+				Background="Black"
+				BorderBrush="LightGray"
+				BorderThickness="0">
+				<Image Source="{Binding}" Stretch="Uniform" />
+			</Border>
+		</DataTemplate>
+
+		<Style x:Key="NoNothingButton" TargetType="{x:Type Button}">
+			<Setter Property="OverridesDefaultStyle" Value="True" />
+			<Setter Property="Cursor" Value="Pen" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="HorizontalAlignment" Value="Center" />
+			<Setter Property="Background" Value="#01000000" />
+			<Setter Property="RenderTransform">
+				<Setter.Value>
+					<TransformGroup>
+						<ScaleTransform />
+						<SkewTransform />
+						<RotateTransform />
+						<TranslateTransform />
+					</TransformGroup>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="Effect">
+				<Setter.Value>
+					<DropShadowEffect
+						BlurRadius="36"
+						Direction="275"
+						Opacity="0" />
+				</Setter.Value>
+			</Setter>
+
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Border x:Name="border" Background="{TemplateBinding Background}">
+							<ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<!--  PlaceHolder list  -->
+		<Style x:Key="PlaceHoldersList" TargetType="{x:Type ItemsControl}">
+			<!--  Area where to put PlaceHolders  -->
+			<Setter Property="ItemsPanel">
+				<Setter.Value>
+					<ItemsPanelTemplate>
+						<Canvas />
+					</ItemsPanelTemplate>
+				</Setter.Value>
+			</Setter>
+			<!--  PlaceHolder look  -->
+			<Setter Property="ItemTemplate">
+				<Setter.Value>
+					<DataTemplate>
+						<Button Click="selectOne" Style="{StaticResource NoNothingButton}">
+							<Image Source="{Binding IconPath}" Stretch="None" />
+						</Button>
+					</DataTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</Window.Resources>
+
+	<!--  CONTENT  -->
+	<Grid
+		x:Name="regionPanel"
+		Width="1920"
+		Height="1080"
+		Background="Black">
+		<!--  Fond de l'écran  -->
+		<Image
+			x:Name="imageFond"
+			Width="{Binding Path=ActualWidth, ElementName=regionPanel}"
+			Height="{Binding Path=ActualHeight, ElementName=regionPanel}" />
+
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="1490" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*" />
+				<RowDefinition Height="780" />
+				<RowDefinition Height="3*" />
+			</Grid.RowDefinitions>
+
+			<!--  Carte  -->
+			<fluidkit:ElementFlow
+				x:Name="flowCarte"
+				Grid.Row="1"
+				Grid.Column="1"
+				ElementHeight="780"
+				ElementWidth="1490"
+				ItemTemplate="{DynamicResource Background}"
+				SelectionChanged="disableSelectionChanged">
+				<fluidkit:ElementFlow.Layout>
+					<fluidkit:CoverFlow />
+				</fluidkit:ElementFlow.Layout>
+
+				<!--  Position de la caméra permettant le rendu identique à celui de l'admin  -->
+				<fluidkit:ElementFlow.Camera>
+					<PerspectiveCamera
+						x:Name="camera"
+						FieldOfView="1500"
+						LookDirection="0,0,-6"
+						Position="0,0,2.65" />
+				</fluidkit:ElementFlow.Camera>
+			</fluidkit:ElementFlow>
+
+			<!--  PlaceHolders défini les token à placer  -->
+			<ItemsControl
+				Grid.Row="1"
+				Grid.Column="1"
+				Height="{Binding Path=ActualHeight, ElementName=ScatterView}"
+				Margin="0"
+				ItemsSource="{Binding Selected.PlaceHolders}"
+				RenderTransformOrigin="0,0"
+				Style="{StaticResource PlaceHoldersList}">
+				<!--  Background  -->
+				<!--  X Y where to put PlaceHolders  -->
+				<ItemsControl.ItemContainerStyle>
+					<Style>
+						<Setter Property="Canvas.Top" Value="{Binding Path=Y}" />
+						<Setter Property="Canvas.Left" Value="{Binding Path=X}" />
+					</Style>
+				</ItemsControl.ItemContainerStyle>
+			</ItemsControl>
+
+			<!--  Bouton de retour  -->
+			<Button
+				x:Name="Quit_button"
+				Grid.Row="2"
+				Grid.Column="0"
+				Width="120"
+				Height="120"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				Background="{x:Null}"
+				BorderBrush="{x:Null}"
+				Click="BoutonQuit_click"
+				TouchDown="BoutonQuit_click">
+				<StackPanel>
+					<Image
+						x:Name="returnRegion"
+						Width="100"
+						Height="100"
+						Opacity="1.0" />
+				</StackPanel>
+			</Button>
+
+			<!--  Liste des cartes  -->
+			<StackPanel
+				Grid.Row="2"
+				Grid.Column="1"
+				Margin="0,20"
+				HorizontalAlignment="Center"
+				Orientation="Horizontal">
+				<ListBox
+					x:Name="listboxMaps"
+					MaxWidth="1490"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					Background="Transparent"
+					BorderThickness="0"
+					ItemTemplate="{StaticResource ListTemplate}"
+					ItemsSource="{Binding Maps}"
+					ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+					SelectionChanged="mapSelection"
+					SelectionMode="Single">
+					<ListBox.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel IsItemsHost="True" />
+						</ItemsPanelTemplate>
+					</ListBox.ItemsPanel>
+				</ListBox>
+			</StackPanel>
+
+			<!--  Affichage des Placeholders de la carte  -->
+			<s:ScatterView
+				x:Name="ScatterView"
+				Grid.Row="1"
+				Grid.Column="1"
+				Margin="0"
+				Padding="0"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Top"
+				IsHitTestVisible="True"
+				IsManipulationEnabled="True"
+				Visibility="{Binding ScatterViewVisibility}">
+
+				<s:ScatterViewItem
+					Width="{Binding Path=ActualWidth, ElementName=ScatterView}"
+					Height="{Binding Path=ActualHeight, ElementName=ScatterView}"
+					Padding="0"
+					Background="{x:Null}"
+					BorderThickness="1"
+					CanMove="True"
+					CanRotate="True"
+					CanScale="True"
+					Center="745,390"
+					IsManipulationEnabled="False"
+					IsTopmostOnActivation="True"
+					Orientation="0"
+					ZIndex="1" />
+			</s:ScatterView>
+		</Grid>
+	</Grid>
+</Window>

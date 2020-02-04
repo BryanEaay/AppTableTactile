@@ -1,0 +1,342 @@
+﻿<UserControl
+	x:Class="AppAdministrationWPF.View.AdminMemoryView"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	Width="Auto"
+	Height="Auto"
+	Margin="10,0,0,10"
+	d:DesignHeight="1000"
+	d:DesignWidth="1665"
+	mc:Ignorable="d">
+
+	<UserControl.Resources>
+		<Style x:Key="RedGlowItemContainer" TargetType="{x:Type ListBoxItem}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type ListBoxItem}">
+						<Border x:Name="IconBorder" BorderThickness="1">
+							<ContentPresenter />
+						</Border>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsSelected" Value="true">
+								<Setter TargetName="IconBorder" Property="Background" Value="DarkGray" />
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</UserControl.Resources>
+
+	<Grid
+		x:Name="LayoutRoot"
+		MinWidth="650"
+		MinHeight="350"
+		Background="Black">
+
+		<GroupBox Name="GroupAdminMemory">
+
+			<GroupBox.Header>
+				<Label
+					Content="Memory"
+					FontSize="22"
+					FontWeight="Bold"
+					Foreground="White" />
+			</GroupBox.Header>
+
+			<Grid Name="MainGrid">
+
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="130" />
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
+
+				<Grid.RowDefinitions>
+					<RowDefinition Height="380*" />
+					<RowDefinition Height="80*" />
+				</Grid.RowDefinitions>
+
+				<StackPanel
+					Grid.Row="1"
+					Grid.Column="0"
+					VerticalAlignment="Center">
+					<Button
+						Width="100"
+						Height="30"
+						Margin="0,10"
+						Click="ImportButton_Click"
+						Content="Import" />
+					<Button
+						Width="100"
+						Height="30"
+						Margin="0,10"
+						Click="ExportButton_Click"
+						Content="Export" />
+				</StackPanel>
+
+				<Grid
+					Name="ListButtons"
+					Grid.Row="0"
+					Grid.Column="0">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height="*" />
+					</Grid.RowDefinitions>
+
+					<Button
+						Name="btMemory1"
+						Grid.Row="0"
+						Width="95"
+						Height="95"
+						Margin="5,10"
+						HorizontalAlignment="Stretch"
+						Background="Transparent"
+						Click="DisplaySelection"
+						Tag="Easy">
+						<StackPanel Orientation="Vertical">
+							<Image
+								x:Name="niveau1Memory"
+								Width="80"
+								Height="50" />
+							<TextBlock
+								Margin="3,0,0,0"
+								HorizontalAlignment="Center"
+								Foreground="White"
+								Text="Memory 16p" />
+						</StackPanel>
+					</Button>
+
+					<Button
+						Name="btMemory2"
+						Grid.Row="1"
+						Width="95"
+						Height="95"
+						Margin="5,10"
+						HorizontalAlignment="Stretch"
+						Background="Transparent"
+						Click="DisplaySelection"
+						Tag="Medium">
+						<StackPanel Orientation="Vertical">
+							<Image
+								x:Name="niveau2Memory"
+								Width="80"
+								Height="50" />
+							<TextBlock
+								Margin="3,0,0,0"
+								HorizontalAlignment="Center"
+								Foreground="White"
+								Text="Memory 16p" />
+						</StackPanel>
+					</Button>
+
+					<Button
+						Name="btMemory3"
+						Grid.Row="2"
+						Width="95"
+						Height="95"
+						Margin="5,10"
+						HorizontalAlignment="Stretch"
+						Background="Transparent"
+						Click="DisplaySelection"
+						Tag="Hard">
+						<StackPanel Orientation="Vertical">
+							<Image
+								x:Name="niveau3Memory"
+								Width="80"
+								Height="50" />
+							<TextBlock
+								Margin="3,0,0,0"
+								HorizontalAlignment="Center"
+								Foreground="White"
+								Text="Memory 36p" />
+						</StackPanel>
+					</Button>
+
+					<Button
+						Name="btBackground"
+						Grid.Row="3"
+						Width="95"
+						Height="95"
+						Margin="5,20,5,10"
+						HorizontalAlignment="Stretch"
+						Background="Transparent"
+						Click="DisplaySelection"
+						Tag="Background">
+						<StackPanel Orientation="Vertical">
+							<Image
+								x:Name="arrierePlansMemory"
+								Width="80"
+								Height="50" />
+							<TextBlock
+								Margin="3,0,0,0"
+								HorizontalAlignment="Center"
+								Foreground="White"
+								Text="Arrieres Plans" />
+						</StackPanel>
+					</Button>
+				</Grid>
+
+				<ListBox
+					Name="ListPictures"
+					Grid.Row="0"
+					Grid.Column="1"
+					Margin="0,10,10,0"
+					ItemsSource="{Binding Pictures}"
+					SelectedItem="{Binding Selected}"
+					SelectionChanged="updateSelection"
+					SelectionMode="Single">
+					<ListBox.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType={x:Type ScrollContentPresenter}}}" />
+						</ItemsPanelTemplate>
+					</ListBox.ItemsPanel>
+					<ListBox.ItemTemplate>
+						<DataTemplate>
+							<StackPanel
+								Width="200"
+								Height="200"
+								Margin="5"
+								Orientation="Vertical">
+								<TextBlock
+									HorizontalAlignment="Center"
+									VerticalAlignment="Center"
+									Text="{Binding Name}" />
+								<Image
+									Height="170"
+									Source="{Binding Source}"
+									Stretch="Uniform" />
+							</StackPanel>
+						</DataTemplate>
+					</ListBox.ItemTemplate>
+				</ListBox>
+
+				<!--  Grille de la configuration  -->
+				<Grid
+					x:Name="bgActionPan"
+					Grid.Row="1"
+					Grid.Column="1"
+					Margin="0,10,0,0"
+					Visibility="{Binding BackgroundsVisible}">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="90" />
+					</Grid.ColumnDefinitions>
+
+					<StackPanel
+						Grid.Column="1"
+						HorizontalAlignment="Stretch"
+						VerticalAlignment="Stretch">
+						<Button
+							Width="80"
+							Margin="5"
+							Padding="5"
+							Click="AddButton_Click"
+							Content="Ajouter" />
+						<Button
+							Width="80"
+							Margin="5"
+							Padding="5"
+							Click="ModifyButton_Click"
+							Content="Modifier" />
+						<Button
+							Width="80"
+							Margin="5"
+							Padding="5"
+							Click="DeleteButton_Click"
+							Content="Supprimer" />
+					</StackPanel>
+					<Grid x:Name="gridConfiguration" Visibility="Hidden">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="75" />
+							<ColumnDefinition Width="2*" />
+							<ColumnDefinition Width="100" />
+							<ColumnDefinition Width="3*" />
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="Auto" />
+							<RowDefinition Height="*" />
+						</Grid.RowDefinitions>
+
+						<Label
+							HorizontalAlignment="Right"
+							VerticalAlignment="Center"
+							Content="Source:"
+							Foreground="White" />
+						<TextBox
+							x:Name="txtSource"
+							Grid.Column="1"
+							Height="23"
+							Margin="2,5"
+							HorizontalAlignment="Stretch"
+							VerticalAlignment="Center"
+							IsEnabled="False"
+							Text="{Binding Selected.Source, Mode=OneWay}" />
+						<Button
+							Grid.Column="2"
+							Height="23"
+							Margin="5,0,0,0"
+							HorizontalAlignment="Stretch"
+							Click="SearchButton_Click"
+							Content="Parcourir..." />
+
+						<MediaElement
+							x:Name="previewMedia"
+							Grid.RowSpan="3"
+							Grid.Column="3"
+							Width="160"
+							HorizontalAlignment="Stretch"
+							VerticalAlignment="Top"
+							Source="{Binding Selected.Source, Mode=OneWay}"
+							Stretch="Uniform" />
+
+						<Label
+							Grid.Row="1"
+							Grid.Column="0"
+							HorizontalAlignment="Right"
+							VerticalAlignment="Center"
+							Content="Nom:"
+							Foreground="White" />
+						<TextBox
+							x:Name="txtName"
+							Grid.Row="1"
+							Grid.Column="1"
+							Grid.ColumnSpan="2"
+							Height="23"
+							Margin="2,5"
+							HorizontalAlignment="Stretch"
+							VerticalAlignment="Center"
+							Text="{Binding Selected.Name, Mode=OneWay}" />
+
+						<StackPanel
+							Grid.Row="2"
+							Grid.ColumnSpan="3"
+							HorizontalAlignment="Stretch"
+							VerticalAlignment="Bottom"
+							FlowDirection="RightToLeft"
+							Orientation="Horizontal">
+							<Button
+								Width="75"
+								Height="23"
+								Margin="5,10"
+								VerticalAlignment="Top"
+								Click="ValidateButton_Click"
+								Content="Valider" />
+							<Button
+								Width="75"
+								Height="23"
+								Margin="5,10"
+								VerticalAlignment="Top"
+								Click="CancelButton_Click"
+								Content="Annuler" />
+						</StackPanel>
+					</Grid>
+				</Grid>
+			</Grid>
+		</GroupBox>
+	</Grid>
+</UserControl>

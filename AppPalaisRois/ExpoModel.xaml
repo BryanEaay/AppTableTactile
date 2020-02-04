@@ -1,0 +1,118 @@
+﻿<Window
+	x:Class="AppPalaisRois.ExpoModel"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	Title="ExpoModel"
+	Width="1920"
+	Height="1080"
+	WindowState="Maximized"
+	WindowStyle="None"
+	mc:Ignorable="d">
+
+	<Grid Background="Black">
+
+		<StackPanel
+			Width="1660"
+			Height="145"
+			Margin="0,0,40,20"
+			HorizontalAlignment="Right"
+			VerticalAlignment="Bottom">
+			<ListBox
+				Name="dock_expo"
+				MaxWidth="1600"
+				Margin="15,0,15,0"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				Background="Transparent"
+				BorderBrush="Transparent"
+				ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+				<ListBox.Resources>
+					<SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Transparent" />
+					<SolidColorBrush x:Key="{x:Static SystemColors.HighlightTextBrushKey}" Color="Black" />
+					<SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="Transparent" />
+				</ListBox.Resources>
+				<ListBox.ItemsPanel>
+					<ItemsPanelTemplate>
+						<UniformGrid Rows="1" />
+					</ItemsPanelTemplate>
+				</ListBox.ItemsPanel>
+			</ListBox>
+		</StackPanel>
+		<Grid
+			Name="dock_main_photo"
+			Width="1483"
+			Margin="10,10,427,190"
+			HorizontalAlignment="Center" />
+		<Grid Name="dock_title" Margin="1511,14,10,186">
+			<Border
+				Name="MASK"
+				Background="White"
+				CornerRadius="80" />
+			<Grid Name="effect" Margin="2,2,2,2">
+				<Border
+					Name="MASK2"
+					Background="#999999"
+					CornerRadius="80" />
+
+				<Grid Name="effect2" Margin="1,1,1,1">
+					<Border Name="MASK3" CornerRadius="80" />
+
+					<Grid Name="grid" Margin="1,1,1,1" />
+				</Grid>
+			</Grid>
+		</Grid>
+
+		<Button
+			x:Name="PlayStop"
+			Width="45"
+			Height="45"
+			Margin="15,880,0,0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Background="Black"
+			BorderBrush="Black"
+			Click="BoutonPlayStop"
+			TouchDown="BoutonPlayStop"
+			Visibility="Hidden">
+			<Grid Name="gridplay" />
+		</Button>
+		<TextBlock
+			Name="currentTimeTextBlock"
+			Height="45"
+			Margin="90,890,1665,170"
+			Foreground="White"
+			RenderTransformOrigin="-7.755,-1.178"
+			Visibility="Hidden" />
+		<Slider
+			x:Name="slider"
+			Width="1250"
+			Height="45"
+			Margin="165,890,397,170"
+			ValueChanged="Slider_ValueChanged"
+			Visibility="Hidden" />
+		<Button
+			x:Name="Quit_button"
+			Canvas.Left="100"
+			Canvas.Top="681"
+			Width="90"
+			Height="90"
+			Margin="75,960,0,0"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Background="Black"
+			BorderBrush="Black"
+			Click="BoutonQuit_click"
+			TouchDown="BoutonQuit_click"
+			Visibility="Visible">
+			<StackPanel>
+				<Image
+					x:Name="returnExpo"
+					Width="80"
+					Height="80"
+					Opacity="1.0" />
+			</StackPanel>
+		</Button>
+	</Grid>
+</Window>

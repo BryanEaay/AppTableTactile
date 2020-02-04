@@ -1,0 +1,187 @@
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\AppPalaisRois.exe.config
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\AppPalaisRois.exe
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\AppPalaisRois.pdb
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\CommonSurface.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Expression.Effects.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.Core.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.Presentation.Design.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.Presentation.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.Presentation.Generic.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.HidSupport.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.NativeWrappers.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\CommonSurface.pdb
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Expression.Effects.xml
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\bin\Debug\fr\Microsoft.Windows.Design.Interaction.resources.dll
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.csprojResolveAssemblyReference.cache
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppRegionMainView.baml
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\ExpoModel.baml
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\ExpoWindow.baml
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\MainWindow.baml
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\MemoryMainWindow.baml
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\PuzzleMainWindow.baml
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\VisiteWindow.baml
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppRegionMainView.g.cs
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\ExpoModel.g.cs
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\ExpoWindow.g.cs
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\MainWindow.g.cs
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\MemoryMainWindow.g.cs
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\PuzzleMainWindow.g.cs
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\VisiteWindow.g.cs
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\App.g.cs
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois_MarkupCompile.cache
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.g.resources
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.Properties.Resources.resources
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.csproj.GenerateResource.Cache
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.csproj.CoreCompileInputs.cache
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.exe
+C:\Users\melanie.servais\Documents\Appli Palais Doc\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.pdb
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\AppPalaisRois.exe.config
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\AppPalaisRois.exe
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\AppPalaisRois.pdb
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\CommonSurface.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Expression.Effects.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.Core.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.Presentation.Design.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.Presentation.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.Presentation.Generic.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.HidSupport.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Surface.NativeWrappers.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\CommonSurface.pdb
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\CommonSurface.dll.config
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Expression.Effects.xml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.csprojResolveAssemblyReference.cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppRegionMainView.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\ExpoModel.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\ExpoWindow.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\MainWindow.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\MemoryMainWindow.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\PuzzleMainWindow.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\VisiteWindow.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppRegionMainView.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\ExpoModel.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\ExpoWindow.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\MainWindow.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\MemoryMainWindow.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\PuzzleMainWindow.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\VisiteWindow.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\App.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois_MarkupCompile.cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.g.resources
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.Properties.Resources.resources
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.csproj.GenerateResource.Cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.csproj.CoreCompileInputs.cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.exe
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppPalaisRois\obj\Debug\AppPalaisRois.pdb
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\AppPalaisRois.exe.config
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\AppPalaisRois.exe
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\AppPalaisRois.pdb
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\AppPalaisRois.csprojResolveAssemblyReference.cache
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\AppRegionMainView.baml
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\ExpoModel.baml
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\ExpoWindow.baml
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\MainWindow.baml
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\MemoryMainWindow.baml
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\PuzzleMainWindow.baml
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\VisiteWindow.baml
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\AppRegionMainView.g.cs
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\ExpoModel.g.cs
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\ExpoWindow.g.cs
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\MainWindow.g.cs
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\MemoryMainWindow.g.cs
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\PuzzleMainWindow.g.cs
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\VisiteWindow.g.cs
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\App.g.cs
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\AppPalaisRois_MarkupCompile.cache
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\AppPalaisRois.g.resources
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\AppPalaisRois.Properties.Resources.resources
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\AppPalaisRois.csproj.GenerateResource.Cache
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\AppPalaisRois.exe
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\AppPalaisRois.pdb
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\CommonSurface.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Expression.Effects.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Surface.Core.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Surface.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Surface.Presentation.Design.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Surface.Presentation.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Surface.Presentation.Generic.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Windows.Design.Extensibility.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\System.Windows.Interactivity.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Surface.HidSupport.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Surface.NativeWrappers.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Windows.Design.Interaction.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\CommonSurface.pdb
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Expression.Effects.xml
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\System.Windows.Interactivity.xml
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\fr\Microsoft.Windows.Design.Interaction.resources.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Geckofx-Core.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\Geckofx-Winforms.dll
+C:\Session Grand Public\Application\AppPalaisRois\bin\Debug\FluidKit.dll
