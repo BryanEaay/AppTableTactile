@@ -68,22 +68,14 @@
 				HorizontalAlignment="Right"
 				VerticalAlignment="Top"
 				Content="Image 1 :" />
-			<Label
+            <Label
 				Name="lblImg2"
 				Grid.Row="4"
 				Grid.Column="0"
 				HorizontalAlignment="Right"
 				VerticalAlignment="Top"
 				Content="Image 2 :" />
-			<Label
-				Name="SourceMedia"
-				Grid.Row="5"
-				Grid.Column="0"
-				HorizontalAlignment="Right"
-				VerticalAlignment="Top"
-				Content="Source Media :" />
-
-			<TextBox
+            <TextBox
 				Name="txtPath"
 				Grid.Row="0"
 				Grid.Column="1"
@@ -115,21 +107,14 @@
 				HorizontalAlignment="Stretch"
 				VerticalAlignment="Center"
 				MaxLines="100" />
-			<TextBox
+            <TextBox
 				Name="txtImg2"
 				Grid.Row="4"
 				Grid.Column="1"
 				HorizontalAlignment="Stretch"
 				VerticalAlignment="Center"
 				MaxLines="100" />
-			<TextBox
-				Name="Source"
-				Grid.Row="5"
-				Grid.Column="1"
-				HorizontalAlignment="Stretch"
-				VerticalAlignment="Center"
-				MaxLines="100" />
-			<ComboBox
+            <ComboBox
 				Name="cbxType"
 				Grid.Row="1"
 				Grid.Column="2"

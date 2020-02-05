@@ -45,7 +45,7 @@
 			Width="1483"
 			Margin="10,10,427,190"
 			HorizontalAlignment="Center" />
-		<Grid Name="dock_title" Margin="1511,14,10,186">
+		<Grid Name="dock_title" Margin="1510,14,10,186">
 			<Border
 				Name="MASK"
 				Background="White"

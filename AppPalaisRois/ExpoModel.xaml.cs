@@ -296,41 +296,16 @@ namespace AppPalaisRois
                         imgGrey.HorizontalAlignment = HorizontalAlignment.Center;
                         imgGrey.VerticalAlignment = VerticalAlignment.Center;
 
-                        if (z.text != null)
-                        {
-                            this.MASK.Visibility = Visibility.Visible;
-                            this.MASK2.Visibility = Visibility.Visible;
-                            this.MASK3.Visibility = Visibility.Visible;
-                            this.dock_main_photo.Width = 1483;
-                            Thickness LargeurImage = dock_main_photo.Margin;
-                            LargeurImage.Left = 10;
-                            LargeurImage.Top = 10;
-                            LargeurImage.Right = 427;
-                            LargeurImage.Bottom = 190;
-                            dock_main_photo.Margin = LargeurImage;
+                        //image de fond du cadre
+                        BitmapDecoder decoder = BitmapDecoder.Create(
+                        new Uri("pack://application:,,,/CommonSurface;component/Resources/FondTextBoxe.jpg", UriKind.RelativeOrAbsolute),
+                        BitmapCreateOptions.PreservePixelFormat,
+                        BitmapCacheOption.OnLoad);
+                        ImageBrush brush = new ImageBrush(decoder.Frames[0]);
+                        this.MASK3.Background = brush;
 
-                            //image de fond du cadre
-                            BitmapDecoder decoder = BitmapDecoder.Create(
-                            new Uri("pack://application:,,,/CommonSurface;component/Resources/FondTextBoxe.jpg", UriKind.RelativeOrAbsolute),
-                            BitmapCreateOptions.PreservePixelFormat,
-                            BitmapCacheOption.OnLoad);
-                            ImageBrush brush = new ImageBrush(decoder.Frames[0]);
-                            this.MASK3.Background = brush;
-
-                            //assemblement du cadre et du media
-                            grid1.Children.Add(imgGrey);
-                        }else{
-                            this.MASK.Visibility = Visibility.Hidden;
-                            this.MASK2.Visibility = Visibility.Hidden;
-                            this.MASK3.Visibility = Visibility.Hidden;
-                            this.dock_main_photo.Width = 1920;
-                            Thickness LargeurImage = dock_main_photo.Margin;
-                            LargeurImage.Left = 0;
-                            LargeurImage.Top = 0;
-                            LargeurImage.Right = 0;
-                            LargeurImage.Bottom = 190;
-                            this.dock_main_photo.Margin = LargeurImage;
-                        }
+                        //assemblement du cadre et du media
+                        grid1.Children.Add(imgGrey);
 
                         if (z.type == "photo")
                         {
@@ -558,7 +533,6 @@ namespace AppPalaisRois
                 TextBlock textblockSource = new TextBlock();
                 Grid grid1 = new Grid();
                 Grid grid2 = new Grid();
-                Grid grid3 = new Grid();
                 System.Windows.Controls.Image imgButton = new System.Windows.Controls.Image();
                 WebBrowser myBrowser = new WebBrowser();
 
@@ -713,29 +687,13 @@ namespace AppPalaisRois
                             textblockAll.Inlines.Add(img2);
                         }
 
-                        //grid Source
-                        grid3.Margin = new Thickness(20, 200, 10, 30);
-                        grid3.HorizontalAlignment = HorizontalAlignment.Left;
-                        grid3.VerticalAlignment = VerticalAlignment.Bottom;
-
-                        //titre Source
-                        textblockSource.Visibility = Visibility.Visible;
-                        textblockSource.FontSize = 15;
-                        textblockSource.Foreground = new SolidColorBrush(Colors.White);
-                        textblockSource.Text = i.ListeDiapo[0].source;
-                        textblockSource.HorizontalAlignment = HorizontalAlignment.Left;
-                        textblockSource.TextAlignment = TextAlignment.Justify;
-                        textblockSource.TextWrapping = TextWrapping.WrapWithOverflow;
-
                         //ajoute de tous les textes blocks
                         grid1.Children.Add(textblocktitle);
                         grid2.Children.Add(textblockAll);
-                        grid3.Children.Add(textblockSource);
 
                         //ajoute de tous les grid
                         grid.Children.Add(grid1);
                         grid.Children.Add(grid2);
-                        grid.Children.Add(grid3);
                     }
                 }
             }
@@ -785,7 +743,6 @@ namespace AppPalaisRois
                 TextBlock textblockSource = new TextBlock();
                 Grid grid1 = new Grid();
                 Grid grid2 = new Grid();
-                Grid grid3 = new Grid();
                 WebBrowser myBrowser = new WebBrowser();
 
                 //declaration de l'elements média
@@ -901,27 +858,9 @@ namespace AppPalaisRois
                 //ajoute du text block contenu texte
                 grid2.Children.Add(textblockAll);
 
-                //grid Source
-                grid3.Margin = new Thickness(20, 200, 10, 30);
-                grid3.HorizontalAlignment = HorizontalAlignment.Left;
-                grid3.VerticalAlignment = VerticalAlignment.Bottom;
-
-                //titre Source
-                textblockSource.Visibility = Visibility.Visible;
-                textblockSource.FontSize = 15;
-                textblockSource.Foreground = new SolidColorBrush(Colors.White);
-                textblockSource.Text = Diapo.source;
-                textblockSource.HorizontalAlignment = HorizontalAlignment.Left;
-                textblockSource.TextAlignment = TextAlignment.Justify;
-                textblockSource.TextWrapping = TextWrapping.WrapWithOverflow;
-
-                //ajoute du text block Source
-                grid3.Children.Add(textblockSource);
-
                 //ajoute de tous les grid
                 grid.Children.Add(grid1);
                 grid.Children.Add(grid2);
-                grid.Children.Add(grid3);
 
                 if (Diapo.type == "photo")
                 {
