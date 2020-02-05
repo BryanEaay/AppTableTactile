@@ -528,11 +528,9 @@ namespace AppPalaisRois
             grid.Children.Clear();
             try
             {
-                TextBlock textblocktitle = new TextBlock();
                 TextBlock textblockAll = new TextBlock();
                 TextBlock textblockSource = new TextBlock();
                 Grid grid1 = new Grid();
-                Grid grid2 = new Grid();
                 System.Windows.Controls.Image imgButton = new System.Windows.Controls.Image();
                 WebBrowser myBrowser = new WebBrowser();
 
@@ -623,24 +621,10 @@ namespace AppPalaisRois
                         imgButton.VerticalAlignment = VerticalAlignment.Center;
                         gridplay.Children.Add(imgButton);
 
-                        //grid titre
-                        grid1.Margin = new Thickness(10, 30, 10, 30);
-                        grid1.HorizontalAlignment = HorizontalAlignment.Center;
-                        grid1.VerticalAlignment = VerticalAlignment.Top;
-
-                        //titre
-                        textblocktitle.Visibility = Visibility.Visible;
-                        textblocktitle.FontSize = 25;
-                        textblocktitle.Foreground = new SolidColorBrush(Colors.White);
-                        textblocktitle.Text = i.ListeDiapo[0].titre;
-                        textblocktitle.HorizontalAlignment = HorizontalAlignment.Center;
-                        textblocktitle.TextAlignment = TextAlignment.Justify;
-                        textblocktitle.TextWrapping = TextWrapping.WrapWithOverflow;
-
                         //grid Texte
-                        grid2.Margin = new Thickness(10, 150, 10, 60);
-                        grid2.HorizontalAlignment = HorizontalAlignment.Left;
-                        grid2.VerticalAlignment = VerticalAlignment.Stretch;
+                        grid1.Margin = new Thickness(10, 50, 10, 60);
+                        grid1.HorizontalAlignment = HorizontalAlignment.Left;
+                        grid1.VerticalAlignment = VerticalAlignment.Stretch;
 
                         // Texte
                         textblockAll.Visibility = Visibility.Visible;
@@ -688,12 +672,10 @@ namespace AppPalaisRois
                         }
 
                         //ajoute de tous les textes blocks
-                        grid1.Children.Add(textblocktitle);
-                        grid2.Children.Add(textblockAll);
+                        grid1.Children.Add(textblockAll);
 
                         //ajoute de tous les grid
                         grid.Children.Add(grid1);
-                        grid.Children.Add(grid2);
                     }
                 }
             }
@@ -738,11 +720,10 @@ namespace AppPalaisRois
             try
             {
                 //declaration des espaces de textes
-                TextBlock textblocktitle = new TextBlock();
                 TextBlock textblockAll = new TextBlock();
                 TextBlock textblockSource = new TextBlock();
                 Grid grid1 = new Grid();
-                Grid grid2 = new Grid();
+
                 WebBrowser myBrowser = new WebBrowser();
 
                 //declaration de l'elements média
@@ -787,27 +768,11 @@ namespace AppPalaisRois
                 //ecriture du texte sur la texte boxe
                 string expo_title = Diapo.type + " " + Diapo.element;
 
-                //grid titre
-                grid1.Margin = new Thickness(10, 30, 10, 30);
-                grid1.HorizontalAlignment = HorizontalAlignment.Center;
-                grid1.VerticalAlignment = VerticalAlignment.Top;
-
-                //titre
-                textblocktitle.Visibility = Visibility.Visible;
-                textblocktitle.FontSize = 25;
-                textblocktitle.Foreground = new SolidColorBrush(Colors.White);
-                textblocktitle.Text = Diapo.titre;
-                textblocktitle.HorizontalAlignment = HorizontalAlignment.Center;
-                textblocktitle.TextAlignment = TextAlignment.Justify;
-                textblocktitle.TextWrapping = TextWrapping.WrapWithOverflow;
-
-                //ajoute du text block titre
-                grid1.Children.Add(textblocktitle);
 
                 //grid Contenu
-                grid2.Margin = new Thickness(10, 150, 10, 60);
-                grid2.HorizontalAlignment = HorizontalAlignment.Left;
-                grid2.VerticalAlignment = VerticalAlignment.Stretch;
+                grid1.Margin = new Thickness(10, 50, 10, 60);
+                grid1.HorizontalAlignment = HorizontalAlignment.Left;
+                grid1.VerticalAlignment = VerticalAlignment.Stretch;
 
                 // Texte
                 textblockAll.Visibility = Visibility.Visible;
@@ -856,11 +821,10 @@ namespace AppPalaisRois
                 }
 
                 //ajoute du text block contenu texte
-                grid2.Children.Add(textblockAll);
+                grid1.Children.Add(textblockAll);
 
                 //ajoute de tous les grid
                 grid.Children.Add(grid1);
-                grid.Children.Add(grid2);
 
                 if (Diapo.type == "photo")
                 {
