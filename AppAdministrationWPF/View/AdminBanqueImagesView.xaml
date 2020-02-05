@@ -154,7 +154,7 @@
 					VerticalAlignment="Top"
 					FontSize="16"
 					Foreground="White">
-					Modification des Médias (Images/Vidéos) :
+					Modification du fond (Image ou Vidéo) :
 				</Label>
 				<StackPanel
 					Grid.Row="0"
@@ -172,7 +172,7 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="btAddMap_Click"
-						Content="Ajouter media" />
+						Content="Ajouter fond" />
 					<Button
 						x:Name="btModifierCarteBanqueImages"
 						Width="150"
@@ -183,7 +183,7 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="btEditMap_Click"
-						Content="Modifier media" />
+						Content="Modifier fond" />
 					<Button
 						x:Name="btDeleteMapBanqueImages"
 						Width="150"
@@ -193,10 +193,10 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="btDeleteMap_Click"
-						Content="Supprimer media" />
+						Content="Supprimer fond" />
 				</StackPanel>
 
-				<!--  Modification des ??? -->
+				<!--  Modification des medias -->
 				<Label
 					Grid.Row="1"
 					Grid.Column="1"
@@ -204,7 +204,7 @@
 					VerticalAlignment="Top"
 					FontSize="16"
 					Foreground="White">
-					Modification des ??? :
+					Modification des Médias (Images ou Vidéos) :
 				</Label>
 				<StackPanel
 					Grid.Row="1"
@@ -222,7 +222,7 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="btAddPlace_Click"
-						Content="Ajouter ???" />
+						Content="Ajouter media" />
 					<Button
 						x:Name="btEditPlaceBanqueImages"
 						Width="150"
@@ -233,7 +233,7 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="miEditPH_Click"
-						Content="Modifier ???" />
+						Content="Modifier media" />
 					<Button
 						x:Name="btDeletePlaceBanqueImages"
 						Width="150"
@@ -243,7 +243,7 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="miDeletePH_Click"
-						Content="Supprimer ???" />
+						Content="Supprimer media" />
 				</StackPanel>
 
 				<!--  IMPORT / EXPORT  -->
