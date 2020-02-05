@@ -609,10 +609,10 @@ namespace AppPalaisRois
 
                         //recupération de la sourcebutton
                         imgButton.Source = Imaging.CreateBitmapSourceFromHBitmap(
-                               CommonSurface.Properties.Resources.pause.GetHbitmap(),
-                               IntPtr.Zero,
-                               Int32Rect.Empty,
-                               BitmapSizeOptions.FromEmptyOptions());
+                           CommonSurface.Properties.Resources.pause.GetHbitmap(),
+                           IntPtr.Zero,
+                           Int32Rect.Empty,
+                           BitmapSizeOptions.FromEmptyOptions());
 
                         //initialisation de l'image
                         imgButton.Width = 40;
@@ -621,61 +621,84 @@ namespace AppPalaisRois
                         imgButton.VerticalAlignment = VerticalAlignment.Center;
                         gridplay.Children.Add(imgButton);
 
-                        //grid Texte
-                        grid1.Margin = new Thickness(10, 50, 10, 60);
-                        grid1.HorizontalAlignment = HorizontalAlignment.Left;
-                        grid1.VerticalAlignment = VerticalAlignment.Stretch;
-
-                        // Texte
-                        textblockAll.Visibility = Visibility.Visible;
-                        textblockAll.FontSize = 15;
-                        textblockAll.Foreground = new SolidColorBrush(Colors.White);
-                        textblockAll.Text = i.ListeDiapo[0].text;
-                        textblockAll.HorizontalAlignment = HorizontalAlignment.Left;
-                        textblockAll.TextAlignment = TextAlignment.Justify;
-                        textblockAll.TextWrapping = TextWrapping.WrapWithOverflow;
-
-                        // Image 1 Variables
-                        Image img1 = new Image();
-                        BitmapImage imgAdd1 = new BitmapImage();
-                        // S'il y a une image dans image 1
-                        if (i.ListeDiapo[0].image1 != null)
+                        if (i.ListeDiapo[0].text != null)
                         {
-                            //recupération de la source
-                            imgAdd1.BeginInit();
-                            imgAdd1.UriSource = new Uri(i.ListeDiapo[0].image1);
-                            imgAdd1.EndInit();
+                            this.dock_title.Visibility = Visibility.Visible;
+                            this.dock_main_photo.Width = 1483;
+                            Thickness LargeurImage = dock_main_photo.Margin;
+                            LargeurImage.Left = 10;
+                            LargeurImage.Top = 10;
+                            LargeurImage.Right = 427;
+                            LargeurImage.Bottom = 190;
+                            dock_main_photo.Margin = LargeurImage;
 
-                            //initialisation de l'elements media
-                            img1.Source = imgAdd1;
+                            //grid Texte
+                            grid1.Margin = new Thickness(10, 50, 10, 60);
+                            grid1.HorizontalAlignment = HorizontalAlignment.Left;
+                            grid1.VerticalAlignment = VerticalAlignment.Stretch;
 
-                            //ajoute du text block contenu image 1
-                            textblockAll.Inlines.Add(img1);
+                            // Texte
+                            textblockAll.Visibility = Visibility.Visible;
+                            textblockAll.FontSize = 15;
+                            textblockAll.Foreground = new SolidColorBrush(Colors.White);
+                            textblockAll.Text = i.ListeDiapo[0].text;
+                            textblockAll.HorizontalAlignment = HorizontalAlignment.Left;
+                            textblockAll.TextAlignment = TextAlignment.Justify;
+                            textblockAll.TextWrapping = TextWrapping.WrapWithOverflow;
+
+                            // Image 1 Variables
+                            Image img1 = new Image();
+                            BitmapImage imgAdd1 = new BitmapImage();
+                            // S'il y a une image dans image 1
+                            if (i.ListeDiapo[0].image1 != null)
+                            {
+                                //recupération de la source
+                                imgAdd1.BeginInit();
+                                imgAdd1.UriSource = new Uri(i.ListeDiapo[0].image1);
+                                imgAdd1.EndInit();
+
+                                //initialisation de l'elements media
+                                img1.Source = imgAdd1;
+
+                                //ajoute du text block contenu image 1
+                                textblockAll.Inlines.Add(img1);
+                            }
+                            // Image 2 Variables
+                            Image img2 = new Image();
+                            BitmapImage imgAdd2 = new BitmapImage();
+                            // S'il y a une image dans image 2
+                            if (i.ListeDiapo[0].image2 != null)
+                            {
+                                //recupération de la source
+                                imgAdd2.BeginInit();
+                                imgAdd2.UriSource = new Uri(i.ListeDiapo[0].image2);
+                                imgAdd2.EndInit();
+
+                                //initialisation de l'elements media
+                                img2.Source = imgAdd2;
+                                //img2.HorizontalAlignment = HorizontalAlignment.Center;
+
+                                //ajoute du text block contenu image 2
+                                textblockAll.Inlines.Add(img2);
+                            }
+
+                            //ajoute de tous les textes blocks
+                            grid1.Children.Add(textblockAll);
+
+                            //ajoute de tous les grid
+                            grid.Children.Add(grid1);
                         }
-                        // Image 2 Variables
-                        Image img2 = new Image();
-                        BitmapImage imgAdd2 = new BitmapImage();
-                        // S'il y a une image dans image 2
-                        if (i.ListeDiapo[0].image2 != null)
+                        else
                         {
-                            //recupération de la source
-                            imgAdd2.BeginInit();
-                            imgAdd2.UriSource = new Uri(i.ListeDiapo[0].image2);
-                            imgAdd2.EndInit();
-
-                            //initialisation de l'elements media
-                            img2.Source = imgAdd2;
-                            //img2.HorizontalAlignment = HorizontalAlignment.Center;
-
-                            //ajoute du text block contenu image 2
-                            textblockAll.Inlines.Add(img2);
+                            this.dock_title.Visibility = Visibility.Hidden;
+                            this.dock_main_photo.Width = 1920;
+                            Thickness LargeurImage = dock_main_photo.Margin;
+                            LargeurImage.Left = 0;
+                            LargeurImage.Top = 0;
+                            LargeurImage.Right = 0;
+                            LargeurImage.Bottom = 190;
+                            this.dock_main_photo.Margin = LargeurImage;
                         }
-
-                        //ajoute de tous les textes blocks
-                        grid1.Children.Add(textblockAll);
-
-                        //ajoute de tous les grid
-                        grid.Children.Add(grid1);
                     }
                 }
             }
@@ -765,66 +788,89 @@ namespace AppPalaisRois
                     myBrowser.HorizontalAlignment = HorizontalAlignment.Center;
                 }
 
-                //ecriture du texte sur la texte boxe
-                string expo_title = Diapo.type + " " + Diapo.element;
-
-
-                //grid Contenu
-                grid1.Margin = new Thickness(10, 50, 10, 60);
-                grid1.HorizontalAlignment = HorizontalAlignment.Left;
-                grid1.VerticalAlignment = VerticalAlignment.Stretch;
-
-                // Texte
-                textblockAll.Visibility = Visibility.Visible;
-                textblockAll.FontSize = 15;
-                textblockAll.Foreground = new SolidColorBrush(Colors.White);
-                textblockAll.Text = Diapo.text;
-                textblockAll.HorizontalAlignment = HorizontalAlignment.Left;
-                textblockAll.TextAlignment = TextAlignment.Justify;
-                textblockAll.TextWrapping = TextWrapping.WrapWithOverflow;
-
-                // Image 1 Variables
-                Image img1 = new Image();
-                BitmapImage imgAdd1 = new BitmapImage();
-                // S'il y a une image dans image 1
-                if (Diapo.image1 != null)
+                if (Diapo.text != null)
                 {
-                    //recupération de la source
-                    imgAdd1.BeginInit();
-                    imgAdd1.UriSource = new Uri(Diapo.image1);
-                    imgAdd1.EndInit();
+                    this.dock_title.Visibility = Visibility.Visible;
+                    this.dock_main_photo.Width = 1483;
+                    Thickness LargeurImage = dock_main_photo.Margin;
+                    LargeurImage.Left = 10;
+                    LargeurImage.Top = 10;
+                    LargeurImage.Right = 427;
+                    LargeurImage.Bottom = 190;
+                    dock_main_photo.Margin = LargeurImage;
 
-                    //initialisation de l'elements media
-                    img1.Source = imgAdd1;
-                    //img1.HorizontalAlignment = HorizontalAlignment.Center;
+                    //ecriture du texte sur la texte boxe
+                    string expo_title = Diapo.type + " " + Diapo.element;
 
-                    //ajoute du text block contenu image 1
-                    textblockAll.Inlines.Add(img1);
+
+                    //grid Contenu
+                    grid1.Margin = new Thickness(10, 50, 10, 60);
+                    grid1.HorizontalAlignment = HorizontalAlignment.Left;
+                    grid1.VerticalAlignment = VerticalAlignment.Stretch;
+
+                    // Texte
+                    textblockAll.Visibility = Visibility.Visible;
+                    textblockAll.FontSize = 15;
+                    textblockAll.Foreground = new SolidColorBrush(Colors.White);
+                    textblockAll.Text = Diapo.text;
+                    textblockAll.HorizontalAlignment = HorizontalAlignment.Left;
+                    textblockAll.TextAlignment = TextAlignment.Justify;
+                    textblockAll.TextWrapping = TextWrapping.WrapWithOverflow;
+
+                    // Image 1 Variables
+                    Image img1 = new Image();
+                    BitmapImage imgAdd1 = new BitmapImage();
+                    // S'il y a une image dans image 1
+                    if (Diapo.image1 != null)
+                    {
+                        //recupération de la source
+                        imgAdd1.BeginInit();
+                        imgAdd1.UriSource = new Uri(Diapo.image1);
+                        imgAdd1.EndInit();
+
+                        //initialisation de l'elements media
+                        img1.Source = imgAdd1;
+                        //img1.HorizontalAlignment = HorizontalAlignment.Center;
+
+                        //ajoute du text block contenu image 1
+                        textblockAll.Inlines.Add(img1);
+                    }
+                    // Image 2 Variables
+                    Image img2 = new Image();
+                    BitmapImage imgAdd2 = new BitmapImage();
+                    // S'il y a une image dans image 2
+                    if (Diapo.image2 != null)
+                    {
+                        //recupération de la source
+                        imgAdd2.BeginInit();
+                        imgAdd2.UriSource = new Uri(Diapo.image2);
+                        imgAdd2.EndInit();
+
+                        //initialisation de l'elements media
+                        img2.Source = imgAdd2;
+                        //img2.HorizontalAlignment = HorizontalAlignment.Center;
+
+                        //ajoute du text block contenu image 2
+                        textblockAll.Inlines.Add(img2);
+                    }
+
+                    //ajoute du text block contenu texte
+                    grid1.Children.Add(textblockAll);
+
+                    //ajoute de tous les grid
+                    grid.Children.Add(grid1);
                 }
-                // Image 2 Variables
-                Image img2 = new Image();
-                BitmapImage imgAdd2 = new BitmapImage();
-                // S'il y a une image dans image 2
-                if (Diapo.image2 != null)
+                else
                 {
-                    //recupération de la source
-                    imgAdd2.BeginInit();
-                    imgAdd2.UriSource = new Uri(Diapo.image2);
-                    imgAdd2.EndInit();
-
-                    //initialisation de l'elements media
-                    img2.Source = imgAdd2;
-                    //img2.HorizontalAlignment = HorizontalAlignment.Center;
-
-                    //ajoute du text block contenu image 2
-                    textblockAll.Inlines.Add(img2);
+                    this.dock_title.Visibility = Visibility.Hidden;
+                    this.dock_main_photo.Width = 1920;
+                    Thickness LargeurImage = dock_main_photo.Margin;
+                    LargeurImage.Left = 0;
+                    LargeurImage.Top = 0;
+                    LargeurImage.Right = 0;
+                    LargeurImage.Bottom = 190;
+                    this.dock_main_photo.Margin = LargeurImage;
                 }
-
-                //ajoute du text block contenu texte
-                grid1.Children.Add(textblockAll);
-
-                //ajoute de tous les grid
-                grid.Children.Add(grid1);
 
                 if (Diapo.type == "photo")
                 {
