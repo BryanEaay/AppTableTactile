@@ -151,6 +151,12 @@
 				Click="buttonEdit_Click"
 				Content="Modification"
 				Style="{StaticResource adminButton}" />
+            <Button
+				x:Name="buttonCredit"
+                Click="buttonCredits_Click"
+				Content="Crédits"
+				Style="{StaticResource adminButton}" 
+                Visibility="Collapsed"/>
 		</StackPanel>
 
 		<!--  Configuration du reste  -->
@@ -159,17 +165,11 @@
 			HorizontalAlignment="Right"
 			VerticalAlignment="Center"
 			Orientation="Horizontal">
-			<Button
+            <Button
 				Click="buttonBackground_Click"
 				Content="Fond d'écran"
 				Style="{StaticResource adminButton}" />
-			<Button
-				x:Name="buttonCredit"
-                Click="buttonCredits_Click"
-				Content="Crédits"
-				Style="{StaticResource adminButton}" 
-                Visibility="Collapsed"/>
-			<Button
+            <Button
 				Click="buttonShowHideGrid_Click"
 				Content="Quadrillage"
 				Style="{StaticResource adminButton}" />
