@@ -244,6 +244,58 @@ namespace AppPalaisRois
         }
 
         /// <summary>
+        /// Lancement de l'application de Frise
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e">     </param>
+        private void LaunchFrise(object sender, EventArgs e)
+        {
+            // Garbage Collector
+            GC.Collect();
+            GC.WaitForFullGCComplete();
+
+            if (isopen == 0)
+            {
+                isopen = 1;
+                //lancement de l'animation avant de fermer
+                Storyboard.SetTarget(sbHideAnimSec, canvas);
+                sbHideAnimSec.Completed += (s, t) =>
+                {
+                    AppFriseMainView fenetre = new AppFriseMainView();
+                    fenetre.Show();
+                    this.Close();
+                };
+                sbHideAnimSec.Begin();
+            }
+        }
+
+        /// <summary>
+        /// Lancement de l'application de region
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e">     </param>
+        private void LaunchBanqueImages(object sender, EventArgs e)
+        {
+            // Garbage Collector
+            GC.Collect();
+            GC.WaitForFullGCComplete();
+
+            if (isopen == 0)
+            {
+                isopen = 1;
+                //lancement de l'animation avant de fermer
+                Storyboard.SetTarget(sbHideAnimSec, canvas);
+                sbHideAnimSec.Completed += (s, t) =>
+                {
+                    AppBanqueImagesMainView fenetre = new AppBanqueImagesMainView();
+                    fenetre.Show();
+                    this.Close();
+                };
+                sbHideAnimSec.Begin();
+            }
+        }
+
+        /// <summary>
         /// Lancement de l'application de visite
         /// </summary>
         /// <param name="sender"></param>

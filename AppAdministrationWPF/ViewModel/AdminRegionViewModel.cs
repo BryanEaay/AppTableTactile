@@ -1,6 +1,7 @@
 ﻿using CommonSurface.DAO;
 using CommonSurface.Model;
 using CommonSurface.ViewModel;
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 
@@ -98,6 +99,16 @@ namespace AppAdministrationWPF.ViewModel
         private void OnPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             DAORegion.Save();
+        }
+
+        public static implicit operator AdminRegionViewModel(AdminFriseViewModel v)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static implicit operator AdminRegionViewModel(AdminBanqueImagesViewModel v)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion Private Methods

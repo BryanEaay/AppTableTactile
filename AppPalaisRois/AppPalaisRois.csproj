@@ -145,6 +145,12 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="AppBanqueImagesMainView.xaml.cs">
+      <DependentUpon>AppBanqueImagesMainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppFriseMainView.xaml.cs">
+      <DependentUpon>AppFriseMainView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AppRegionMainView.xaml.cs">
       <DependentUpon>AppRegionMainView.xaml</DependentUpon>
     </Compile>
@@ -160,6 +166,8 @@
     <Compile Include="PuzzleMainWindow.xaml.cs">
       <DependentUpon>PuzzleMainWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\AppBanqueImagesMainViewModel.cs" />
+    <Compile Include="ViewModel\AppFriseMainViewModel.cs" />
     <Compile Include="ViewModel\AppRegionMainViewModel.cs" />
     <Compile Include="ViewModel\MemoryViewModel.cs" />
     <Compile Include="ViewModel\Piece.cs" />
@@ -170,6 +178,14 @@
     <Compile Include="VisiteWindow.xaml.cs">
       <DependentUpon>VisiteWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="AppBanqueImagesMainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AppFriseMainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="AppRegionMainView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -224,10 +240,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="..\AppAdministrationWPF\app.config">
       <Link>app.config</Link>
       <SubType>Designer</SubType>
     </None>
+    <Resource Include="Fonts\Luciole-Regular.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

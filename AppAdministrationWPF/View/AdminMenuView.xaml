@@ -34,7 +34,7 @@
 							Visibility="Visible">
 							<Image Source="{Binding Path=Source}" />
 							<Label
-								Margin="0,-60,0,0"
+								Margin="0,-65,0,0"
 								HorizontalAlignment="Center"
 								Panel.ZIndex="3"
 								Content="{Binding Path=Text}"
@@ -169,7 +169,6 @@
 				Content="Crédits"
 				Style="{StaticResource adminButton}" 
                 Visibility="Collapsed"/>
-                
 			<Button
 				Click="buttonShowHideGrid_Click"
 				Content="Quadrillage"

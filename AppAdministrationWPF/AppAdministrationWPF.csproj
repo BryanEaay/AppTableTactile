@@ -123,9 +123,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\AdminBanqueImagesViewModel.cs" />
     <Compile Include="ViewModel\AdminMenuViewModel.cs" />
+    <Compile Include="ViewModel\AdminFriseViewModel.cs" />
+    <Compile Include="View\AdminBanqueImagesView.xaml.cs">
+      <DependentUpon>AdminBanqueImagesView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\AdminMenuView.xaml.cs">
       <DependentUpon>AdminMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminFriseView.xaml.cs">
+      <DependentUpon>AdminFriseView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Import.xaml.cs">
       <DependentUpon>Import.xaml</DependentUpon>
@@ -193,9 +201,17 @@
       <DependentUpon>AdminWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\AdminBanqueImagesView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\AdminMenuView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AdminFriseView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\Import.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -278,6 +294,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="app.config" />
+    <Resource Include="Fonts\Luciole-Regular.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

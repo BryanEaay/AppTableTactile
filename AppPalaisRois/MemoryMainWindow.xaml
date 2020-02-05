@@ -255,7 +255,7 @@
 				<TextBlock
 					Width="155"
 					VerticalAlignment="Center"
-					FontFamily="Arial Unicode MS"
+					FontFamily="{StaticResource Luciole-Regular}"
 					FontSize="45"
 					Foreground="White"
 					Text="{Binding TimerGame}"
@@ -332,6 +332,7 @@
 				HorizontalAlignment="Center"
 				Panel.ZIndex="3"
 				Background="#00000000"
+                FontFamily="{StaticResource Luciole-Regular}"
 				FontSize="30"
 				Foreground="White" />
 			<Label
@@ -341,6 +342,7 @@
 				HorizontalAlignment="Center"
 				Panel.ZIndex="3"
 				Background="#00000000"
+                FontFamily="{StaticResource Luciole-Regular}"
 				FontSize="30"
 				Foreground="White" />
 			<Label
@@ -350,6 +352,7 @@
 				HorizontalAlignment="Center"
 				Panel.ZIndex="3"
 				Background="#00000000"
+                FontFamily="{StaticResource Luciole-Regular}"
 				FontSize="30"
 				Foreground="White" />
 		</Canvas>

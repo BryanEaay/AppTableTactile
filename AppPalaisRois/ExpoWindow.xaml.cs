@@ -341,6 +341,7 @@ namespace AppPalaisRois
                 //caractéristique du texte
                 //titre
                 textblocktitle.Visibility = Visibility.Visible;
+                textblocktitle.FontFamily = new FontFamily(new Uri("pack://application:,,,/"), "./Fonts/#Luciole");
                 textblocktitle.FontSize = 15;
                 textblocktitle.Foreground = new SolidColorBrush(Colors.Black);
                 textblocktitle.Text = j.titre;
@@ -348,10 +349,11 @@ namespace AppPalaisRois
                 textblocktitle.HorizontalAlignment = HorizontalAlignment.Center;
                 textblocktitle.VerticalAlignment = VerticalAlignment.Top;
                 textblocktitle.MaxWidth = 200;
-                textblocktitle.TextAlignment = TextAlignment.Justify;
+                textblocktitle.TextAlignment = TextAlignment.Left;
                 textblocktitle.TextWrapping = TextWrapping.WrapWithOverflow;
                 //paragraphe
                 textblocktext.Visibility = Visibility.Visible;
+                textblocktext.FontFamily = new FontFamily(new Uri("pack://application:,,,/"), "./Fonts/#Luciole");
                 textblocktext.FontSize = 10;
                 textblocktext.Foreground = new SolidColorBrush(Colors.Black);
                 textblocktext.Text = j.text;
@@ -359,7 +361,7 @@ namespace AppPalaisRois
                 textblocktext.HorizontalAlignment = HorizontalAlignment.Center;
                 textblocktext.VerticalAlignment = VerticalAlignment.Bottom;
                 textblocktext.MaxWidth = 200;
-                textblocktext.TextAlignment = TextAlignment.Justify;
+                textblocktext.TextAlignment = TextAlignment.Left;
                 textblocktext.TextWrapping = TextWrapping.WrapWithOverflow;
 
                 //déterminer la taille maximum du text

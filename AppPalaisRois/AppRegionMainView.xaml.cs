@@ -587,7 +587,7 @@ namespace AppPalaisRois
                     lblMediaName.VerticalAlignment = VerticalAlignment.Bottom;
                     lblMediaName.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#96000000"));
                     lblMediaName.Foreground = new SolidColorBrush(Colors.White);
-                    lblMediaName.FontFamily = new FontFamily("Arial");
+                    lblMediaName.FontFamily = new FontFamily(new Uri("pack://application:,,,/"), "./Fonts/#Luciole");
                     lblMediaName.Opacity = 0;
                     content.Children.Add(lblMediaName);
 

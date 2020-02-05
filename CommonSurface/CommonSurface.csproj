@@ -77,6 +77,8 @@
     <Compile Include="DAO\DAOMemory.cs" />
     <Compile Include="DAO\DAOMenu.cs" />
     <Compile Include="DAO\DAOPuzzle.cs" />
+    <Compile Include="DAO\DAOBanqueImages.cs" />
+    <Compile Include="DAO\DAOFrise.cs" />
     <Compile Include="DAO\DAOVisite.cs" />
     <Compile Include="Model\Credits.cs" />
     <Compile Include="Model\Difficulty.cs" />

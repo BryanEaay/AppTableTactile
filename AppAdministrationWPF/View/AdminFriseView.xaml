@@ -1,0 +1,317 @@
+﻿<UserControl
+	x:Class="AppAdministrationWPF.View.AdminFriseView"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	Width="1665"
+	Height="1000"
+	Margin="0"
+	HorizontalAlignment="Center"
+	VerticalAlignment="Top"
+	Background="Black"
+	BorderBrush="Black"
+	BorderThickness="1"
+	Foreground="{x:Null}"
+	TabIndex="1"
+	mc:Ignorable="d">
+	<UserControl.Resources>
+		<DataTemplate x:Key="BaseTemplate">
+			<Image Source="{Binding IconPath}" />
+		</DataTemplate>
+
+		<Style x:Key="NoNothingButton" TargetType="Button">
+			<Setter Property="OverridesDefaultStyle" Value="True" />
+			<Setter Property="Margin" Value="0" />
+			<Setter Property="Cursor" Value="Pen" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="HorizontalAlignment" Value="Center" />
+			<EventSetter Event="Click" Handler="selectOne" />
+			<Setter Property="Background" Value="#01000000" />
+			<Setter Property="RenderTransform">
+				<Setter.Value>
+					<TransformGroup>
+						<ScaleTransform />
+						<SkewTransform />
+						<RotateTransform />
+						<TranslateTransform />
+					</TransformGroup>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="Effect">
+				<Setter.Value>
+					<DropShadowEffect
+						BlurRadius="36"
+						Direction="275"
+						Opacity="0" />
+				</Setter.Value>
+			</Setter>
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Border Name="border" Background="{TemplateBinding Background}">
+							<ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<!--  PlaceHolder list  -->
+		<Style x:Key="PlaceHoldersList" TargetType="ItemsControl">
+			<!--  Area where to put PlaceHolders  -->
+			<Setter Property="ItemsPanel">
+				<Setter.Value>
+					<ItemsPanelTemplate>
+						<Canvas Margin="0" />
+					</ItemsPanelTemplate>
+				</Setter.Value>
+			</Setter>
+			<!--  PlaceHolder look  -->
+			<Setter Property="ItemTemplate">
+				<Setter.Value>
+					<DataTemplate>
+						<Button Style="{StaticResource NoNothingButton}">
+							<Button.Content>
+								<Image Source="{Binding Path=IconPath}" Stretch="None" />
+							</Button.Content>
+						</Button>
+					</DataTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</UserControl.Resources>
+
+	<Grid
+		x:Name="GridMapFrise"
+		Height="1000"
+		VerticalAlignment="Top"
+		Background="Black">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="820" />
+			<RowDefinition Height="1*" />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="1665" />
+		</Grid.ColumnDefinitions>
+		<Canvas
+			x:Name="canvasCarteFrise"
+			Width="1490"
+			Height="780"
+			MouseLeftButtonUp="Map_MouseLeftButtonUp"
+			MouseMove="Map_MouseMove">
+			<Image
+				x:Name="CarteFrise"
+				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
+				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
+				Margin="0"
+				Stretch="Uniform" />
+			<ItemsControl
+				x:Name="mapBackgroundFrise"
+				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
+				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Top"
+				Background="Transparent"
+				ItemsSource="{Binding SelectedMap.PlaceHolders}"
+				ScrollViewer.HorizontalScrollBarVisibility="Auto"
+				Style="{StaticResource PlaceHoldersList}">
+
+				<!--  X Y where to put PlaceHolders  -->
+				<ItemsControl.ItemContainerStyle>
+					<Style>
+						<Setter Property="Canvas.Top" Value="{Binding Path=Y}" />
+						<Setter Property="Canvas.Left" Value="{Binding Path=X}" />
+					</Style>
+				</ItemsControl.ItemContainerStyle>
+			</ItemsControl>
+		</Canvas>
+
+		<Border
+			Grid.Row="1"
+			Margin="10,10"
+			BorderBrush="White"
+			BorderThickness="2"
+			CornerRadius="20">
+			<Grid x:Name="grid1Frise" ClipToBounds="True">
+
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="3*" />
+					<ColumnDefinition Width="80" />
+					<ColumnDefinition Width="300" />
+				</Grid.ColumnDefinitions>
+
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*" />
+					<RowDefinition Height="*" />
+				</Grid.RowDefinitions>
+
+				<!--  Modification des Frises  -->
+				<Label
+					Grid.Row="0"
+					Grid.Column="1"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Top"
+					FontSize="16"
+					Foreground="White">
+					Modification des Frises :
+				</Label>
+				<StackPanel
+					Grid.Row="0"
+					Grid.Column="1"
+					Margin="10"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Bottom"
+					Orientation="Horizontal">
+					<Button
+						x:Name="btAddMapFrise"
+						Width="150"
+						Height="35"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+						BorderBrush="{x:Null}"
+						Click="btAddMap_Click"
+						Content="Ajouter frise" />
+					<Button
+						x:Name="btModifierCarteFrise"
+						Width="150"
+						Height="35"
+						Margin="50,0"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+						BorderBrush="{x:Null}"
+						Click="btEditMap_Click"
+						Content="Modifier frise" />
+					<Button
+						x:Name="btDeleteMapFrise"
+						Width="150"
+						Height="35"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+						BorderBrush="{x:Null}"
+						Click="btDeleteMap_Click"
+						Content="Supprimer frise" />
+				</StackPanel>
+
+				<!--  Modification des dates  -->
+				<Label
+					Grid.Row="1"
+					Grid.Column="1"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Top"
+					FontSize="16"
+					Foreground="White">
+					Modification des Dates :
+				</Label>
+				<StackPanel
+					Grid.Row="1"
+					Grid.Column="1"
+					Margin="10"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Bottom"
+					Orientation="Horizontal">
+					<Button
+						x:Name="btAddPlaceFrise"
+						Width="150"
+						Height="35"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+						BorderBrush="{x:Null}"
+						Click="btAddPlace_Click"
+						Content="Ajouter date" />
+					<Button
+						x:Name="btEditPlaceFrise"
+						Width="150"
+						Height="35"
+						Margin="50,0"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+						BorderBrush="{x:Null}"
+						Click="miEditPH_Click"
+						Content="Modifier date" />
+					<Button
+						x:Name="btDeletePlaceFrise"
+						Width="150"
+						Height="35"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+						BorderBrush="{x:Null}"
+						Click="miDeletePH_Click"
+						Content="Supprimer date" />
+				</StackPanel>
+
+				<!--  IMPORT / EXPORT  -->
+				<StackPanel
+					Grid.RowSpan="2"
+					Grid.Column="0"
+					HorizontalAlignment="Center"
+					Orientation="Horizontal">
+					<Button
+						x:Name="btImporterFrise"
+						Grid.Column="1"
+						Width="100"
+						Height="35"
+						Margin="25"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+						BorderBrush="{x:Null}"
+						Click="btImporter_Click"
+						Content="Importer" />
+					<Button
+						x:Name="btExporterFrise"
+						Grid.Column="0"
+						Width="100"
+						Height="35"
+						Margin="25"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center"
+						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+						BorderBrush="{x:Null}"
+						Click="btExporter_Click"
+						Content="Exporter" />
+				</StackPanel>
+
+				<!--  Boutons pour chaanger l'ordre des cartes  -->
+				<Button
+					x:Name="buttonUpFrise"
+					Grid.Row="0"
+					Grid.Column="2"
+					Width="50"
+					Height="60"
+					Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+					Click="buttonUp_Click"
+					Content="^"
+					FontSize="24" />
+				<Button
+					x:Name="buttonDownFrise"
+					Grid.Row="1"
+					Grid.Column="2"
+					Width="50"
+					Height="60"
+					Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
+					Click="buttonDown_Click"
+					Content="v"
+					FontSize="24" />
+
+				<!--  Liste des cartes  -->
+				<ListBox
+					x:Name="listboxMapsFrise"
+					Grid.RowSpan="2"
+					Grid.Column="3"
+					Margin="10,5"
+					DisplayMemberPath="Name"
+					FontSize="16"
+					ItemsSource="{Binding Maps}"
+					SelectionChanged="changeMap"
+					SelectionMode="Single" />
+			</Grid>
+		</Border>
+	</Grid>
+</UserControl>

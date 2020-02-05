@@ -49,9 +49,10 @@
 				<Image x:Name="imageVisite" />
 				<Label
 					x:Name="labelVisite"
-					Margin="0,-60,0,0"
+					Margin="0,-65,0,0"
 					HorizontalAlignment="Center"
 					Panel.ZIndex="3"
+                    FontFamily="{StaticResource Luciole-Regular}"
 					FontSize="30" />
 			</StackPanel>
 
@@ -67,9 +68,10 @@
 				<Image x:Name="imageRegion" />
 				<Label
 					x:Name="labelRegion"
-					Margin="0,-60,0,0"
+					Margin="0,-65,0,0"
 					HorizontalAlignment="Center"
 					Panel.ZIndex="3"
+                    FontFamily="{StaticResource Luciole-Regular}"
 					FontSize="30" />
 			</StackPanel>
 
@@ -85,9 +87,10 @@
 				<Image x:Name="imageMediatheque" />
 				<Label
 					x:Name="labelMediatheque"
-					Margin="0,-60,0,0"
+					Margin="0,-65,0,0"
 					HorizontalAlignment="Center"
 					Panel.ZIndex="3"
+                    FontFamily="{StaticResource Luciole-Regular}"
 					FontSize="30" />
 			</StackPanel>
 
@@ -103,9 +106,10 @@
 				<Image x:Name="imageMemory" />
 				<Label
 					x:Name="labelMemory"
-					Margin="0,-60,0,0"
+					Margin="0,-65,0,0"
 					HorizontalAlignment="Center"
 					Panel.ZIndex="3"
+                    FontFamily="{StaticResource Luciole-Regular}"
 					FontSize="30" />
 			</StackPanel>
 
@@ -121,13 +125,52 @@
 				<Image x:Name="imagePuzzle" />
 				<Label
 					x:Name="labelPuzzle"
-					Margin="0,-60,0,0"
+					Margin="0,-65,0,0"
 					HorizontalAlignment="Center"
 					Panel.ZIndex="3"
+                    FontFamily="{StaticResource Luciole-Regular}"
 					FontSize="30" />
 			</StackPanel>
 
-			<!--  Crédits  -->
+            <!--  Frise  -->
+            <StackPanel
+				x:Name="positionFrise"
+				Width="280"
+				Height="280"
+				Panel.ZIndex="10"
+				MouseLeftButtonUp="LaunchFrise"
+				RenderTransformOrigin="0.5,0.5"
+				TouchDown="LaunchFrise">
+                <Image x:Name="imageFrise" />
+                <Label
+					x:Name="labelFrise"
+					Margin="0,-65,0,0"
+					HorizontalAlignment="Center"
+					Panel.ZIndex="3"
+                    FontFamily="{StaticResource Luciole-Regular}"
+					FontSize="30" />
+            </StackPanel>
+
+            <!--  Banque Images  -->
+            <StackPanel
+				x:Name="positionBanqueImages"
+				Width="280"
+				Height="280"
+				Panel.ZIndex="10"
+				MouseLeftButtonUp="LaunchBanqueImages"
+				RenderTransformOrigin="0.5,0.5"
+				TouchDown="LaunchBanqueImages">
+                <Image x:Name="imageBanqueImages" />
+                <Label
+					x:Name="labelBanqueImages"
+					Margin="0,-65,0,0"
+					HorizontalAlignment="Center"
+					Panel.ZIndex="3"
+                    FontFamily="{StaticResource Luciole-Regular}"
+					FontSize="30" />
+            </StackPanel>
+
+            <!--  Crédits  -->
 			<StackPanel
 				x:Name="positionCredits"
 				Width="100"

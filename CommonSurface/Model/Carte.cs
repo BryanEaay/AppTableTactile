@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Windows.Media.Imaging;
 using System.Xml.Serialization;
 
 namespace CommonSurface.Model
@@ -111,6 +112,8 @@ namespace CommonSurface.Model
             get { return _nom; }
             set { _nom = value; OnPropertyChanged("Nom"); }
         }
+
+        public static BitmapImage Source { get; set; }
 
         #endregion Public Properties
 

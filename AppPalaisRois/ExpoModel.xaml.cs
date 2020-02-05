@@ -20,9 +20,8 @@ namespace AppPalaisRois
     {
         #region Public Fields
 
-        public int thumbnail_height = 140;
-
         //declaration de la taille du media dans la liste
+        public int thumbnail_height = 140;
         public int thumbnail_width = 140;
 
         #endregion Public Fields
@@ -297,16 +296,41 @@ namespace AppPalaisRois
                         imgGrey.HorizontalAlignment = HorizontalAlignment.Center;
                         imgGrey.VerticalAlignment = VerticalAlignment.Center;
 
-                        //image de fond du cadre
-                        BitmapDecoder decoder = BitmapDecoder.Create(
+                        if (z.text != null)
+                        {
+                            this.MASK.Visibility = Visibility.Visible;
+                            this.MASK2.Visibility = Visibility.Visible;
+                            this.MASK3.Visibility = Visibility.Visible;
+                            this.dock_main_photo.Width = 1483;
+                            Thickness LargeurImage = dock_main_photo.Margin;
+                            LargeurImage.Left = 10;
+                            LargeurImage.Top = 10;
+                            LargeurImage.Right = 427;
+                            LargeurImage.Bottom = 190;
+                            dock_main_photo.Margin = LargeurImage;
+
+                            //image de fond du cadre
+                            BitmapDecoder decoder = BitmapDecoder.Create(
                             new Uri("pack://application:,,,/CommonSurface;component/Resources/FondTextBoxe.jpg", UriKind.RelativeOrAbsolute),
                             BitmapCreateOptions.PreservePixelFormat,
                             BitmapCacheOption.OnLoad);
-                        ImageBrush brush = new ImageBrush(decoder.Frames[0]);
-                        this.MASK3.Background = brush;
+                            ImageBrush brush = new ImageBrush(decoder.Frames[0]);
+                            this.MASK3.Background = brush;
 
-                        //assemblement du cadre et du media
-                        grid1.Children.Add(imgGrey);
+                            //assemblement du cadre et du media
+                            grid1.Children.Add(imgGrey);
+                        }else{
+                            this.MASK.Visibility = Visibility.Hidden;
+                            this.MASK2.Visibility = Visibility.Hidden;
+                            this.MASK3.Visibility = Visibility.Hidden;
+                            this.dock_main_photo.Width = 1920;
+                            Thickness LargeurImage = dock_main_photo.Margin;
+                            LargeurImage.Left = 0;
+                            LargeurImage.Top = 0;
+                            LargeurImage.Right = 0;
+                            LargeurImage.Bottom = 190;
+                            this.dock_main_photo.Margin = LargeurImage;
+                        }
 
                         if (z.type == "photo")
                         {

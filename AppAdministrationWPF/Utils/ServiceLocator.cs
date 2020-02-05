@@ -11,6 +11,8 @@ namespace AppAdministrationWPF.Utils
         private static AdminMenuViewModel _adminMenuViewModel;
         private static AdminPuzzleViewModel _adminPuzzleViewModel;
         private static AdminRegionViewModel _adminRegionViewModel;
+        private static AdminFriseViewModel _adminFriseViewModel;
+        private static AdminBanqueImagesViewModel _adminBanqueImagesViewModel;
         private static AdminVisiteViewModel _adminVisiteViewModel;
         private static MainPageViewModel _mainPageViewModel;
 
@@ -23,7 +25,7 @@ namespace AppAdministrationWPF.Utils
             get
             {
                 if (_adminMediathequeViewModel == null) _adminMediathequeViewModel = new AdminMediathequeViewModel();
-                return ServiceLocator._adminMediathequeViewModel;
+                return _adminMediathequeViewModel;
             }
         }
 
@@ -32,7 +34,7 @@ namespace AppAdministrationWPF.Utils
             get
             {
                 if (_adminMemoryViewModel == null) _adminMemoryViewModel = new AdminMemoryViewModel();
-                return ServiceLocator._adminMemoryViewModel;
+                return _adminMemoryViewModel;
             }
         }
 
@@ -41,7 +43,7 @@ namespace AppAdministrationWPF.Utils
             get
             {
                 if (_adminMenuViewModel == null) _adminMenuViewModel = new AdminMenuViewModel();
-                return ServiceLocator._adminMenuViewModel;
+                return _adminMenuViewModel;
             }
         }
 
@@ -50,7 +52,7 @@ namespace AppAdministrationWPF.Utils
             get
             {
                 if (_adminPuzzleViewModel == null) _adminPuzzleViewModel = new AdminPuzzleViewModel();
-                return ServiceLocator._adminPuzzleViewModel;
+                return _adminPuzzleViewModel;
             }
         }
 
@@ -59,7 +61,25 @@ namespace AppAdministrationWPF.Utils
             get
             {
                 if (_adminRegionViewModel == null) _adminRegionViewModel = new AdminRegionViewModel();
-                return ServiceLocator._adminRegionViewModel;
+                return _adminRegionViewModel;
+            }
+        }
+
+        public static AdminFriseViewModel AdminFriseViewModel
+        {
+            get
+            {
+                if (_adminFriseViewModel == null) _adminFriseViewModel = new AdminFriseViewModel();
+                return _adminFriseViewModel;
+            }
+        }
+
+        public static AdminBanqueImagesViewModel AdminBanqueImagesViewModel
+        {
+            get
+            {
+                if (_adminBanqueImagesViewModel == null) _adminBanqueImagesViewModel = new AdminBanqueImagesViewModel();
+                return _adminBanqueImagesViewModel;
             }
         }
 
@@ -68,7 +88,7 @@ namespace AppAdministrationWPF.Utils
             get
             {
                 if (_adminVisiteViewModel == null) _adminVisiteViewModel = new AdminVisiteViewModel();
-                return ServiceLocator._adminVisiteViewModel;
+                return _adminVisiteViewModel;
             }
         }
 
@@ -77,7 +97,7 @@ namespace AppAdministrationWPF.Utils
             get
             {
                 if (_mainPageViewModel == null) _mainPageViewModel = new MainPageViewModel();
-                return ServiceLocator._mainPageViewModel;
+                return _mainPageViewModel;
             }
         }
 

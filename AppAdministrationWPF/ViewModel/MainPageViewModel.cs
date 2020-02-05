@@ -15,6 +15,8 @@ namespace AppAdministrationWPF.ViewModel
         private ICommand _showAdminPuzzleView;
         private ICommand _showAdminRegionView;
         private ICommand _showAdminVisiteView;
+        private ICommand _showAdminFriseView;
+        private ICommand _showAdminBanqueImagesView;
         private ViewModelBase centralElement;
 
         #endregion Private Fields
@@ -103,6 +105,30 @@ namespace AppAdministrationWPF.ViewModel
             }
         }
 
+        public ICommand AdminFriseView
+        {
+            get
+            {
+                if (this._showAdminFriseView == null)
+                {
+                    this._showAdminFriseView = new DelegateCommand(ShowAdminFriseView, CanShowAdminFriseView);
+                }
+                return this._showAdminFriseView;
+            }
+        }
+
+        public ICommand AdminBanqueImagesView
+        {
+            get
+            {
+                if (this._showAdminBanqueImagesView == null)
+                {
+                    this._showAdminBanqueImagesView = new DelegateCommand(ShowAdminBanqueImagesView, CanShowAdminBanqueImagesView);
+                }
+                return this._showAdminBanqueImagesView;
+            }
+        }
+
         public ICommand AdminVisiteView
         {
             get
@@ -123,6 +149,18 @@ namespace AppAdministrationWPF.ViewModel
         {
             return true;
         }
+
+        public bool CanShowAdminFriseView(object param)
+        {
+            return true;
+        }
+
+
+        public bool CanShowAdminBanqueImagesView(object param)
+        {
+            return true;
+        }
+
 
         public bool CanShowMediathequeView(object param)
         {
@@ -167,6 +205,20 @@ namespace AppAdministrationWPF.ViewModel
         public void ShowAdminRegionView(object param)
         {
             this.CentralElement = ServiceLocator.AdminRegionViewModel;
+        }
+
+        //ADMIN FRISE
+
+        public void ShowAdminFriseView(object param)
+        {
+            this.CentralElement = ServiceLocator.AdminFriseViewModel;
+        }
+
+        //ADMIN BANWQUE IMAGES
+
+        public void ShowAdminBanqueImagesView(object param)
+        {
+            this.CentralElement = ServiceLocator.AdminBanqueImagesViewModel;
         }
 
         //ADMIN MEDIATHEQUE

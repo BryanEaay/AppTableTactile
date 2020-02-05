@@ -14,7 +14,7 @@
 	Background="{x:Null}"
 	Closed="Window_Closed"
 	Closing="Window_Closing"
-	FontFamily="Arial"
+	FontFamily="{StaticResource Luciole-Regular}"
 	FontSize="12"
 	Foreground="{x:Null}"
 	ScrollViewer.HorizontalScrollBarVisibility="Auto"
@@ -67,7 +67,13 @@
 			<DataTemplate DataType="{x:Type vm:AdminVisiteViewModel}">
 				<local:AdminVisiteView />
 			</DataTemplate>
-		</ResourceDictionary>
+            <DataTemplate DataType="{x:Type vm:AdminFriseViewModel}">
+                <local:AdminFriseView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:AdminBanqueImagesViewModel}">
+                <local:AdminBanqueImagesView />
+            </DataTemplate>
+        </ResourceDictionary>
 	</Window.Resources>
 
 	<Grid
@@ -107,8 +113,8 @@
 			<!--  Barre Menu  -->
 			<StackPanel
 				Width="210"
-				Height="140"
-				Margin="0,27,0,0"
+				Height="100"
+				Margin="0,15,0,0"
 				HorizontalAlignment="Left"
 				VerticalAlignment="Center">
 				<Label
@@ -156,8 +162,8 @@
 			<!--  Barre Région  -->
 			<StackPanel
 				Width="210"
-				Height="140"
-				Margin="0,27,0,0"
+				Height="100"
+				Margin="0,15,0,0"
 				HorizontalAlignment="Left"
 				VerticalAlignment="Center">
 				<Label
@@ -202,11 +208,109 @@
 				</Button>
 			</StackPanel>
 
-			<!--  Barre Expo / Mediathèque  -->
+            <!--  Barre Frise  -->
+            <StackPanel
+				Width="210"
+				Height="100"
+				Margin="0,15,0,0"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Center">
+                <Label
+					x:Name="labelFrise"
+					FontFamily="Century Gothic"
+					FontSize="24"
+					Foreground="White" />
+                <Button
+					x:Name="buttonFrise"
+					Width="600"
+					Height="100"
+					Margin="-403,0,0,0"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					HorizontalContentAlignment="Center"
+					BorderBrush="White"
+					BorderThickness="1"
+					Command="{Binding AdminFriseView}"
+					FontFamily="Bebas Neue"
+					FontSize="22"
+					Foreground="White"
+					IsDefault="True"
+					RenderTransformOrigin="0.5,0.5"
+					Style="{StaticResource MyButtonStyle}">
+                    <Button.Effect>
+                        <DropShadowEffect
+							Direction="335"
+							Opacity="0"
+							ShadowDepth="9" />
+                    </Button.Effect>
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform />
+                            <SkewTransform />
+                            <RotateTransform />
+                            <TranslateTransform />
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Background>
+                        <ImageBrush x:Name="menuFrise" />
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            <!--  Barre Banque d'Images  -->
+            <StackPanel
+				Width="210"
+				Height="100"
+				Margin="0,15,0,0"
+				HorizontalAlignment="Left"
+				VerticalAlignment="Center">
+                <Label
+					x:Name="labelBanqueImages"
+					FontFamily="Century Gothic"
+					FontSize="24"
+					Foreground="White" />
+                <Button
+					x:Name="buttonBanqueImages"
+					Width="600"
+					Height="100"
+					Margin="-403,0,0,0"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					HorizontalContentAlignment="Center"
+					BorderBrush="White"
+					BorderThickness="1"
+					Command="{Binding AdminBanqueImagesView}"
+					FontFamily="Bebas Neue"
+					FontSize="22"
+					Foreground="White"
+					IsDefault="True"
+					RenderTransformOrigin="0.5,0.5"
+					Style="{StaticResource MyButtonStyle}">
+                    <Button.Effect>
+                        <DropShadowEffect
+							Direction="335"
+							Opacity="0"
+							ShadowDepth="9" />
+                    </Button.Effect>
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform />
+                            <SkewTransform />
+                            <RotateTransform />
+                            <TranslateTransform />
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Background>
+                        <ImageBrush x:Name="menuBanqueImages" />
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            <!--  Barre Expo / Mediathèque  -->
 			<StackPanel
 				Width="210"
-				Height="140"
-				Margin="0,27,0,0"
+				Height="100"
+				Margin="0,15,0,0"
 				HorizontalAlignment="Left"
 				VerticalAlignment="Center">
 				<Label
@@ -253,8 +357,8 @@
 			<!--  Barre Visite  -->
 			<StackPanel
 				Width="210"
-				Height="140"
-				Margin="0,27,0,0"
+				Height="100"
+				Margin="0,15,0,0"
 				HorizontalAlignment="Left"
 				VerticalAlignment="Center">
 				<Label
@@ -301,8 +405,8 @@
 			<!--  Barre Memory  -->
 			<StackPanel
 				Width="210"
-				Height="140"
-				Margin="0,27,0,0"
+				Height="100"
+				Margin="0,15,0,0"
 				HorizontalAlignment="Left"
 				VerticalAlignment="Center">
 				<Label
@@ -350,8 +454,8 @@
 			<!--  Barre Puzzle  -->
 			<StackPanel
 				Width="210"
-				Height="140"
-				Margin="0,27,0,0"
+				Height="100"
+				Margin="0,15,0,0"
 				HorizontalAlignment="Left"
 				VerticalAlignment="Center">
 				<Label

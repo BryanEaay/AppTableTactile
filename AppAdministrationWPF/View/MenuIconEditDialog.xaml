@@ -96,7 +96,7 @@
 			<!--  Image  -->
 			<Label Grid.Row="0" Grid.Column="0">Image:</Label>
 			<Border Grid.Row="0" Grid.Column="1">
-				<TextBlock x:Name="txtImageURI" />
+                <TextBlock x:Name="txtImageURI" FontFamily="{StaticResource Luciole-Regular}" />
 			</Border>
 			<Button
 				x:Name="buttonSearchFile"

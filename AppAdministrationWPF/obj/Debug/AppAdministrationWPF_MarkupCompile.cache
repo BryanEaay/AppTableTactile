@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Nicolas\Source\Repos\AppTableTactile\AppAdministrationWPF\obj\Debug\
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\
 AppAdministrationWPF
 none
 false
 
-C:\Users\Nicolas\Source\Repos\AppTableTactile\AppAdministrationWPF\App.xaml
-172068953567
+C:\Session Grand Public\Application\AppAdministrationWPF\App.xaml
+191646229698
 
-31199715102
-242024486249
-AdminWindow.xaml;View\AdminMenuView.xaml;View\Import.xaml;View\Export.xaml;View\MapWindow.xaml;View\MenuIconEditDialog.xaml;View\VisiteEditDialog.xaml;View\AdminVisiteView.xaml;View\ExpoAdd.xaml;View\AdminMemoryView.xaml;View\AdminPuzzleView.xaml;View\AdminRegionView.xaml;View\AdminMediathequeView.xaml;View\DiapoAdd.xaml;View\MediaDialog.xaml;View\PlaceHolderWindow.xaml;View\PanoramaEditDialog.xaml;
+351168692024
+24-1409926931
+AdminWindow.xaml;View\AdminBanqueImagesView.xaml;View\AdminMenuView.xaml;View\AdminFriseView.xaml;View\Import.xaml;View\Export.xaml;View\MapWindow.xaml;View\MenuIconEditDialog.xaml;View\VisiteEditDialog.xaml;View\AdminVisiteView.xaml;View\ExpoAdd.xaml;View\AdminMemoryView.xaml;View\AdminPuzzleView.xaml;View\AdminRegionView.xaml;View\AdminMediathequeView.xaml;View\DiapoAdd.xaml;View\MediaDialog.xaml;View\PlaceHolderWindow.xaml;View\PanoramaEditDialog.xaml;
 
 False
 

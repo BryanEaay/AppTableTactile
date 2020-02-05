@@ -41,6 +41,8 @@ namespace AppAdministrationWPF
             initBar("Mediatheque");
             initBar("Memory");
             initBar("Puzzle");
+            initBar("Frise");
+            initBar("BanqueImages");
         }
 
         #endregion Public Constructors

@@ -347,7 +347,7 @@
 				<TextBlock
 					Width="155"
 					VerticalAlignment="Center"
-					FontFamily="Arial Unicode MS"
+					FontFamily="{StaticResource Luciole-Regular}"
 					FontSize="45"
 					Foreground="White"
 					Text="{Binding TimerGame}"

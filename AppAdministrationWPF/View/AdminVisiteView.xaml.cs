@@ -374,8 +374,6 @@ namespace AppAdministrationWPF.View
                     return "";
                 }
             };
-
-            return "";
         }
 
         /// <summary>

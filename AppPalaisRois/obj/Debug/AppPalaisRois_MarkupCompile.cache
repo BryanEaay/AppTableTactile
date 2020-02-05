@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Nicolas\Source\Repos\AppTableTactile\AppPalaisRois\obj\Debug\
+C:\Session Grand Public\Application\AppPalaisRois\obj\Debug\
 AppPalaisRois
 none
 false
 DEBUG;TRACE
-C:\Users\Nicolas\Source\Repos\AppTableTactile\AppPalaisRois\App.xaml
-7-1434360228
+C:\Session Grand Public\Application\AppPalaisRois\App.xaml
+9-1325799109
 
-20946678430
-312147041825
-AppRegionMainView.xaml;ExpoModel.xaml;ExpoWindow.xaml;MainWindow.xaml;MemoryMainWindow.xaml;PuzzleMainWindow.xaml;VisiteWindow.xaml;
+24711229118
+311761201240
+AppBanqueImagesMainView.xaml;AppFriseMainView.xaml;AppRegionMainView.xaml;ExpoModel.xaml;ExpoWindow.xaml;MainWindow.xaml;MemoryMainWindow.xaml;PuzzleMainWindow.xaml;VisiteWindow.xaml;
 
 False
 

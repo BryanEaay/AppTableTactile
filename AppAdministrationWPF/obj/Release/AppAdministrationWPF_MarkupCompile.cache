@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Release\
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Release\
 AppAdministrationWPF
 none
 false
 DEBUG;TRACE
-C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\App.xaml
-13-361258939
+C:\Session Grand Public\Application\AppAdministrationWPF\App.xaml
+172068953567
 
-26-1271513941
-21-1781278957
-AdminWindow.xaml;View\Import.xaml;View\Export.xaml;View\VisiteAdd.xaml;View\AdminVisiteView.xaml;View\ExpoAdd.xaml;View\AdminMemoryView.xaml;View\AdminPuzzleView.xaml;View\AdminRegionView.xaml;View\AdminMediathequeView.xaml;View\DiapoAdd.xaml;View\MediaDialog.xaml;View\PlaceHolderWindow.xaml;
+31199715102
+24-929658432
+AdminWindow.xaml;View\AdminMenuView.xaml;View\Import.xaml;View\Export.xaml;View\MapWindow.xaml;View\MenuIconEditDialog.xaml;View\VisiteEditDialog.xaml;View\AdminVisiteView.xaml;View\ExpoAdd.xaml;View\AdminMemoryView.xaml;View\AdminPuzzleView.xaml;View\AdminRegionView.xaml;View\AdminMediathequeView.xaml;View\DiapoAdd.xaml;View\MediaDialog.xaml;View\PlaceHolderWindow.xaml;View\PanoramaEditDialog.xaml;
 
-False
+True
 

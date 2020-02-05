@@ -198,7 +198,7 @@ namespace AppAdministrationWPF.View
                 doc.Load(chemin);
                 XmlNode node = doc.DocumentElement.SelectSingleNode("/DAOMenu/Background");
                 node.InnerText = _viewModel.Background;
-                doc.Save(chemin);
+                doc.Save(chemin);           
             }
         }
 
@@ -410,17 +410,17 @@ namespace AppAdministrationWPF.View
                 _selectedItem.Effect = shadowEffect;
                 _viewModel.Selected = (_selectedItem.Tag as string == _viewModel.Credits.Icon.Name) ? _viewModel.Credits.Icon : (Icon)_selectedItem.DataContext;
                 panelIconEdit.Visibility = Visibility.Visible;
-                if (this._viewModel.Selected.Name == "Credits")
+				if (this._viewModel.Selected.Name == "Credits")
                 {
                     buttonCredit.Visibility = Visibility.Visible;
-                }
+                }											   
                 buttonVisibility.Content = (_viewModel.Selected.Visibility) ? "Cacher" : "Afficher";
             }
             else
             {
                 this._selectedItem = null;
                 panelIconEdit.Visibility = Visibility.Hidden;
-                buttonCredit.Visibility = Visibility.Collapsed;
+				buttonCredit.Visibility = Visibility.Collapsed;											   
             }
         }
 
