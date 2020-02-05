@@ -51,15 +51,15 @@ namespace AppPalaisRois
             ///* ANIM PART*/
             ///* EFFECTS RESOURCE DICTIONARY */
             myresourcedictionary = new ResourceDictionary();
-            myresourcedictionary.Source = new Uri("/CommonSurface;component/XAML/Effects.xaml", UriKind.RelativeOrAbsolute);
-            sbHide = myresourcedictionary["hideAnimSec"] as Storyboard;
+            myresourcedictionary.Source = new Uri("/CommonSurface;component/XAML/EffectsFrise.xaml", UriKind.RelativeOrAbsolute);
+            //sbHide = myresourcedictionary["hideAnimSec"] as Storyboard;
 
             ///* GRAB STORYBOARDS FROM RD */
             sbFloat = myresourcedictionary["animFloat"] as Storyboard;
             sbDefloat = myresourcedictionary["animDefloat"] as Storyboard;
 
             selectedOnes = new List<PlaceHolder>();
-            flowCarte.Layout = new Rolodex();
+            flowCarte.Layout = new Wall();
 
             List<Map> temp = new List<Map>(ViewModel.Maps);
             temp.Sort((a, b) => (a.ID.CompareTo(b.ID)));
