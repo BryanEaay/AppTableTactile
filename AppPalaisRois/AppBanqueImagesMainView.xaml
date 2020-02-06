@@ -17,12 +17,11 @@
 	<!--  Ressources de la fenêtre  -->
 	<Window.Resources>
         <DataTemplate x:Key="ListTemplate">
-			<Grid Width="120" Height="120">
-				<Label Panel.ZIndex="1" Background="Gray" />
-				<Image
+            <Grid Width="120" Height="120">
+                <Image
 					Margin="10"
 					Panel.ZIndex="10"
-					Source="{Binding Background}"
+					Source="{Binding Path=Thumbnail}"
 					Stretch="Uniform" />
 			</Grid>
 		</DataTemplate>
@@ -100,15 +99,15 @@
 
 	<!--  CONTENT  -->
 	<Grid
-		x:Name="regionPanel"
+		x:Name="BanqueImagesPanel"
 		Width="1920"
 		Height="1080"
 		Background="Black">
 		<!--  Fond de l'écran  -->
 		<Image
 			x:Name="imageFond"
-			Width="{Binding Path=ActualWidth, ElementName=regionPanel}"
-			Height="{Binding Path=ActualHeight, ElementName=regionPanel}" />
+			Width="{Binding Path=ActualWidth, ElementName=BanqueImagesPanel}"
+			Height="{Binding Path=ActualHeight, ElementName=BanqueImagesPanel}" />
 
 		<Grid>
 			<Grid.ColumnDefinitions>

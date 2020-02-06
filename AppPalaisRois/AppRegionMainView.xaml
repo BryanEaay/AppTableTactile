@@ -16,18 +16,17 @@
 
 	<!--  Ressources de la fenêtre  -->
 	<Window.Resources>
-		<DataTemplate x:Key="ListTemplate">
-			<Grid Width="120" Height="120">
-				<Label Panel.ZIndex="1" Background="Gray" />
-				<Image
+        <DataTemplate x:Key="ListTemplate">
+            <Grid Width="120" Height="120">
+                <Image
 					Margin="10"
 					Panel.ZIndex="10"
-					Source="{Binding Background}"
+					Source="{Binding Path=Thumbnail}"
 					Stretch="Uniform" />
-			</Grid>
-		</DataTemplate>
+            </Grid>
+        </DataTemplate>
 
-		<DataTemplate x:Key="Background">
+        <DataTemplate x:Key="Background">
 			<Border
 				x:Name="ElementVisual"
 				Grid.Row="0"

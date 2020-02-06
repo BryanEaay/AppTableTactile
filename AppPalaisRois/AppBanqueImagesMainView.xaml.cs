@@ -179,7 +179,7 @@ namespace AppPalaisRois
         private void BoutonQuit_click(object sender, RoutedEventArgs e)
         {
             //Effet de fermeture
-            Storyboard.SetTarget(sbHide, regionPanel);
+            Storyboard.SetTarget(sbHide, BanqueImagesPanel);
             sbHide.Completed += (s, t) =>
             {
                 //Fermeture et ouverture des fenetres
