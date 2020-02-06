@@ -531,6 +531,7 @@ namespace AppPalaisRois
                 TextBlock textblockAll = new TextBlock();
                 TextBlock textblockSource = new TextBlock();
                 Grid grid1 = new Grid();
+                Grid grid2 = new Grid();
                 System.Windows.Controls.Image imgButton = new System.Windows.Controls.Image();
                 WebBrowser myBrowser = new WebBrowser();
 
@@ -682,11 +683,27 @@ namespace AppPalaisRois
                                 textblockAll.Inlines.Add(img2);
                             }
 
+                            //grid Source
+                            grid2.Margin = new Thickness(20, 200, 10, 30);
+                            grid2.HorizontalAlignment = HorizontalAlignment.Left;
+                            grid2.VerticalAlignment = VerticalAlignment.Bottom;
+
+                            //titre Source
+                            textblockSource.Visibility = Visibility.Visible;
+                            textblockSource.FontSize = 12;
+                            textblockSource.Foreground = new SolidColorBrush(Colors.White);
+                            textblockSource.Text = i.ListeDiapo[0].source;
+                            textblockSource.HorizontalAlignment = HorizontalAlignment.Center;
+                            textblockSource.TextAlignment = TextAlignment.Left;
+                            textblockSource.TextWrapping = TextWrapping.WrapWithOverflow;
+
                             //ajoute de tous les textes blocks
                             grid1.Children.Add(textblockAll);
+                            grid2.Children.Add(textblockSource);
 
                             //ajoute de tous les grid
                             grid.Children.Add(grid1);
+                            grid.Children.Add(grid2);
                         }
                         else
                         {
@@ -746,7 +763,7 @@ namespace AppPalaisRois
                 TextBlock textblockAll = new TextBlock();
                 TextBlock textblockSource = new TextBlock();
                 Grid grid1 = new Grid();
-
+                Grid grid2 = new Grid();
                 WebBrowser myBrowser = new WebBrowser();
 
                 //declaration de l'elements média
@@ -857,8 +874,26 @@ namespace AppPalaisRois
                     //ajoute du text block contenu texte
                     grid1.Children.Add(textblockAll);
 
+                    //grid Source
+                    grid2.Margin = new Thickness(20, 200, 10, 30);
+                    grid2.HorizontalAlignment = HorizontalAlignment.Left;
+                    grid2.VerticalAlignment = VerticalAlignment.Bottom;
+
+                    //titre Source
+                    textblockSource.Visibility = Visibility.Visible;
+                    textblockSource.FontSize = 12;
+                    textblockSource.Foreground = new SolidColorBrush(Colors.White);
+                    textblockSource.Text = Diapo.source;
+                    textblockSource.HorizontalAlignment = HorizontalAlignment.Center;
+                    textblockSource.TextAlignment = TextAlignment.Left;
+                    textblockSource.TextWrapping = TextWrapping.WrapWithOverflow;
+
+                    //ajoute du text block Source
+                    grid2.Children.Add(textblockSource);
+
                     //ajoute de tous les grid
                     grid.Children.Add(grid1);
+                    grid.Children.Add(grid2);
                 }
                 else
                 {

@@ -43,6 +43,7 @@ namespace AppAdministrationWPF.View
                     //récuperation de toute les anciennes données
                     txtName.Text = xn["titre"].InnerText;
                     txtDescription.Text = xn["text"].InnerText;
+                    Source.Text = xn["source"].InnerText;
                     ViewModel.Path = xn["element"].InnerText;
                     txtImg1.Text = xn["image1"].InnerText;
                     txtImg2.Text = xn["image2"].InnerText;
@@ -162,6 +163,10 @@ namespace AppAdministrationWPF.View
 
                     textNode.InnerText = txtDescription.Text;
 
+                    XmlNode SourceNode = doc.CreateElement("source");
+
+                    SourceNode.InnerText = Source.Text;
+
                     XmlNode Img1Node = doc.CreateElement("image1");
 
                     Img1Node.InnerText = txtImg1.Text;
@@ -195,6 +200,8 @@ namespace AppAdministrationWPF.View
 
                     newNode.AppendChild(textNode);
 
+                    newNode.AppendChild(SourceNode);
+
                     newNode.AppendChild(Img1Node);
 
                     newNode.AppendChild(Img2Node);
@@ -216,6 +223,7 @@ namespace AppAdministrationWPF.View
                     xn["element"].InnerText = txtPath.Text;
                     xn["titre"].InnerText = txtName.Text;
                     xn["text"].InnerText = txtDescription.Text;
+                    xn["source"].InnerText = Source.Text;
                     xn["image1"].InnerText = txtImg1.Text;
                     xn["image2"].InnerText = txtImg2.Text;
                     if (Video.IsSelected)
