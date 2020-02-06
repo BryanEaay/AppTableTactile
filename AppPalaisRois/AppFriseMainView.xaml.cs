@@ -51,8 +51,8 @@ namespace AppPalaisRois
             ///* ANIM PART*/
             ///* EFFECTS RESOURCE DICTIONARY */
             myresourcedictionary = new ResourceDictionary();
-            myresourcedictionary.Source = new Uri("/CommonSurface;component/XAML/EffectsFrise.xaml", UriKind.RelativeOrAbsolute);
-            //sbHide = myresourcedictionary["hideAnimSec"] as Storyboard;
+            myresourcedictionary.Source = new Uri("/CommonSurface;component/XAML/Effects.xaml", UriKind.RelativeOrAbsolute);
+            sbHide = myresourcedictionary["hideAnimSec"] as Storyboard;
 
             ///* GRAB STORYBOARDS FROM RD */
             sbFloat = myresourcedictionary["animFloat"] as Storyboard;
@@ -179,7 +179,7 @@ namespace AppPalaisRois
         private void BoutonQuit_click(object sender, RoutedEventArgs e)
         {
             //Effet de fermeture
-            Storyboard.SetTarget(sbHide, regionPanel);
+            Storyboard.SetTarget(sbHide, FrisePanel);
             sbHide.Completed += (s, t) =>
             {
                 //Fermeture et ouverture des fenetres
