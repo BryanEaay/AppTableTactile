@@ -100,15 +100,15 @@
 
 	<!--  CONTENT  -->
 	<Grid
-		x:Name="regionPanel"
+		x:Name="FrisePanel"
 		Width="1920"
 		Height="1080"
 		Background="Black">
 		<!--  Fond de l'écran  -->
 		<Image
 			x:Name="imageFond"
-			Width="{Binding Path=ActualWidth, ElementName=regionPanel}"
-			Height="{Binding Path=ActualHeight, ElementName=regionPanel}" />
+			Width="{Binding Path=ActualWidth, ElementName=FrisePanel}"
+			Height="{Binding Path=ActualHeight, ElementName=FrisePanel}" />
 
 		<Grid>
 			<Grid.ColumnDefinitions>
