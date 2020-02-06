@@ -1,5 +1,7 @@
 ﻿using CommonSurface.Model;
 using Microsoft.Win32;
+using System;
+using System.Configuration;
 using System.Windows;
 
 namespace AppAdministrationWPF.View
@@ -90,6 +92,20 @@ namespace AppAdministrationWPF.View
             {
                 new_map.Background = fileDialog.FileName;
                 txtMap.Text = fileDialog.FileName;
+            }
+        }
+
+        private void btMiniature_Click(object sender, RoutedEventArgs e)
+        {
+            //ouverture de la fenetre de recherche de fichier sur des fichiers video image ou panorama
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "Videos(*.mov, *.wmv, *.mp4)|*.mov;*.wmv;*.mp4|Photos (*.jpg, *.png)|*.jpg;*.png";
+            fileDialog.FilterIndex = 2;
+            fileDialog.Multiselect = false;
+            Nullable<bool> result = fileDialog.ShowDialog();
+            if (result == true)
+            {
+                new_map.Thumbnail = fileDialog.FileName;
             }
         }
 

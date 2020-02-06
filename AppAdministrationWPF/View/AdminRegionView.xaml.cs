@@ -366,6 +366,18 @@ namespace AppAdministrationWPF.View
             }
         }
 
+        /// <summary>
+        /// Relance le média lorsque celui-ci se termine
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e">     </param>
+        private void m_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            MediaElement media = sender as MediaElement;
+            media.Position = TimeSpan.FromSeconds(0);
+            media.Play();
+        }
+
         #endregion media actions
     }
 }

@@ -15,97 +15,97 @@
 	Foreground="{x:Null}"
 	TabIndex="1"
 	mc:Ignorable="d">
-	<UserControl.Resources>
-		<DataTemplate x:Key="BaseTemplate">
-			<Image Source="{Binding IconPath}" />
-		</DataTemplate>
+    <UserControl.Resources>
+        <DataTemplate x:Key="BaseTemplate">
+            <Image Source="{Binding IconPath}" />
+        </DataTemplate>
 
-		<Style x:Key="NoNothingButton" TargetType="Button">
-			<Setter Property="OverridesDefaultStyle" Value="True" />
-			<Setter Property="Margin" Value="0" />
-			<Setter Property="Cursor" Value="Pen" />
-			<Setter Property="VerticalAlignment" Value="Center" />
-			<Setter Property="HorizontalAlignment" Value="Center" />
-			<EventSetter Event="Click" Handler="selectOne" />
-			<Setter Property="Background" Value="#01000000" />
-			<Setter Property="RenderTransform">
-				<Setter.Value>
-					<TransformGroup>
-						<ScaleTransform />
-						<SkewTransform />
-						<RotateTransform />
-						<TranslateTransform />
-					</TransformGroup>
-				</Setter.Value>
-			</Setter>
-			<Setter Property="Effect">
-				<Setter.Value>
-					<DropShadowEffect
+        <Style x:Key="NoNothingButton" TargetType="Button">
+            <Setter Property="OverridesDefaultStyle" Value="True" />
+            <Setter Property="Margin" Value="0" />
+            <Setter Property="Cursor" Value="Pen" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <EventSetter Event="Click" Handler="selectOne" />
+            <Setter Property="Background" Value="#01000000" />
+            <Setter Property="RenderTransform">
+                <Setter.Value>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect
 						BlurRadius="36"
 						Direction="275"
 						Opacity="0" />
-				</Setter.Value>
-			</Setter>
-			<Setter Property="Template">
-				<Setter.Value>
-					<ControlTemplate TargetType="Button">
-						<Border Name="border" Background="{TemplateBinding Background}">
-							<ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-						</Border>
-					</ControlTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
-		<!--  PlaceHolder list  -->
-		<Style x:Key="PlaceHoldersList" TargetType="ItemsControl">
-			<!--  Area where to put PlaceHolders  -->
-			<Setter Property="ItemsPanel">
-				<Setter.Value>
-					<ItemsPanelTemplate>
-						<Canvas Margin="0" />
-					</ItemsPanelTemplate>
-				</Setter.Value>
-			</Setter>
-			<!--  PlaceHolder look  -->
-			<Setter Property="ItemTemplate">
-				<Setter.Value>
-					<DataTemplate>
-						<Button Style="{StaticResource NoNothingButton}">
-							<Button.Content>
-								<Image Source="{Binding Path=IconPath}" Stretch="None" />
-							</Button.Content>
-						</Button>
-					</DataTemplate>
-				</Setter.Value>
-			</Setter>
-		</Style>
-	</UserControl.Resources>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Name="border" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <!--  PlaceHolder list  -->
+        <Style x:Key="PlaceHoldersList" TargetType="ItemsControl">
+            <!--  Area where to put PlaceHolders  -->
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <Canvas Margin="0" />
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+            <!--  PlaceHolder look  -->
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Button Style="{StaticResource NoNothingButton}">
+                            <Button.Content>
+                                <Image Source="{Binding Path=IconPath}" Stretch="None" />
+                            </Button.Content>
+                        </Button>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
 
-	<Grid
+    <Grid
 		x:Name="GridMapBanqueImages"
 		Height="1000"
 		VerticalAlignment="Top"
 		Background="Black">
-		<Grid.RowDefinitions>
-			<RowDefinition Height="820" />
-			<RowDefinition Height="1*" />
-		</Grid.RowDefinitions>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="1665" />
-		</Grid.ColumnDefinitions>
-		<Canvas
+        <Grid.RowDefinitions>
+            <RowDefinition Height="820" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1665" />
+        </Grid.ColumnDefinitions>
+        <Canvas
 			x:Name="canvasCarteBanqueImages"
 			Width="1490"
 			Height="780"
 			MouseLeftButtonUp="Map_MouseLeftButtonUp"
 			MouseMove="Map_MouseMove">
-			<Image
+            <Image
 				x:Name="CarteBanqueImages"
 				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
 				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
 				Margin="0"
 				Stretch="Uniform" />
-			<ItemsControl
+            <ItemsControl
 				x:Name="mapBackgroundBanqueImages"
 				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
 				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
@@ -116,17 +116,17 @@
 				ScrollViewer.HorizontalScrollBarVisibility="Auto"
 				Style="{StaticResource PlaceHoldersList}">
 
-				<!--  X Y where to put PlaceHolders  -->
-				<ItemsControl.ItemContainerStyle>
-					<Style>
-						<Setter Property="Canvas.Top" Value="{Binding Path=Y}" />
-						<Setter Property="Canvas.Left" Value="{Binding Path=X}" />
-					</Style>
-				</ItemsControl.ItemContainerStyle>
-			</ItemsControl>
-		</Canvas>
+                <!--  X Y where to put PlaceHolders  -->
+                <ItemsControl.ItemContainerStyle>
+                    <Style>
+                        <Setter Property="Canvas.Top" Value="{Binding Path=Y}" />
+                        <Setter Property="Canvas.Left" Value="{Binding Path=X}" />
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+            </ItemsControl>
+        </Canvas>
 
-		<Border
+        <Border
 			Grid.Row="1"
 			Margin="10,10"
 			BorderBrush="White"
@@ -134,36 +134,39 @@
 			CornerRadius="20">
             <Grid x:Name="grid1BanqueImages" ClipToBounds="True">
 
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="*" />
-					<ColumnDefinition Width="3*" />
-					<ColumnDefinition Width="80" />
-					<ColumnDefinition Width="300" />
-				</Grid.ColumnDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250*" />
+                    <ColumnDefinition Width="180*" />
+                    <ColumnDefinition Width="350*" />
+                    <ColumnDefinition Width="350*"/>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="300" />
+                </Grid.ColumnDefinitions>
 
-				<Grid.RowDefinitions>
-					<RowDefinition Height="*" />
-					<RowDefinition Height="*" />
-				</Grid.RowDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="49*" />
+                    <RowDefinition Height="29*"/>
+                    <RowDefinition Height="78*" />
+                </Grid.RowDefinitions>
 
                 <!--  Modification des Banque d'Images  -->
-				<Label
+                <Label
 					Grid.Row="0"
-					Grid.Column="1"
+					Grid.Column="2"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Top"
 					FontSize="16"
-					Foreground="White">
-					Modification du fond (Image ou Vidéo) :
-				</Label>
-				<StackPanel
+					Foreground="White" Grid.ColumnSpan="2" Margin="144,0,345,0">
+                    Modification du fond (Image ou Vidéo) :
+                </Label>
+                <StackPanel
 					Grid.Row="0"
-					Grid.Column="1"
-					Margin="10"
+					Grid.Column="2"
+					Margin="15,0,216,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
-					Orientation="Horizontal">
-					<Button
+					Orientation="Horizontal" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                    <Button
 						x:Name="btAddMapBanqueImages"
 						Width="150"
 						Height="35"
@@ -173,7 +176,7 @@
 						BorderBrush="{x:Null}"
 						Click="btAddMap_Click"
 						Content="Ajouter fond" />
-					<Button
+                    <Button
 						x:Name="btModifierCarteBanqueImages"
 						Width="150"
 						Height="35"
@@ -184,7 +187,7 @@
 						BorderBrush="{x:Null}"
 						Click="btEditMap_Click"
 						Content="Modifier fond" />
-					<Button
+                    <Button
 						x:Name="btDeleteMapBanqueImages"
 						Width="150"
 						Height="35"
@@ -194,26 +197,26 @@
 						BorderBrush="{x:Null}"
 						Click="btDeleteMap_Click"
 						Content="Supprimer fond" />
-				</StackPanel>
+                </StackPanel>
 
-				<!--  Modification des medias -->
-				<Label
-					Grid.Row="1"
-					Grid.Column="1"
+                <!--  Modification des medias -->
+                <Label
+					Grid.Row="2"
+					Grid.Column="2"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Top"
 					FontSize="16"
-					Foreground="White">
-					Modification des Médias (Images ou Vidéos) :
-				</Label>
-				<StackPanel
-					Grid.Row="1"
-					Grid.Column="1"
-					Margin="10"
+					Foreground="White" Grid.ColumnSpan="2" Margin="124,0,325,0">
+                    Modification des Médias (Images ou Vidéos) :
+                </Label>
+                <StackPanel
+					Grid.Row="2"
+					Grid.Column="2"
+					Margin="15,0,216,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
-					Orientation="Horizontal">
-					<Button
+					Orientation="Horizontal" Grid.ColumnSpan="2">
+                    <Button
 						x:Name="btAddPlaceBanqueImages"
 						Width="150"
 						Height="35"
@@ -223,7 +226,7 @@
 						BorderBrush="{x:Null}"
 						Click="btAddPlace_Click"
 						Content="Ajouter media" />
-					<Button
+                    <Button
 						x:Name="btEditPlaceBanqueImages"
 						Width="150"
 						Height="35"
@@ -234,7 +237,7 @@
 						BorderBrush="{x:Null}"
 						Click="miEditPH_Click"
 						Content="Modifier media" />
-					<Button
+                    <Button
 						x:Name="btDeletePlaceBanqueImages"
 						Width="150"
 						Height="35"
@@ -244,15 +247,15 @@
 						BorderBrush="{x:Null}"
 						Click="miDeletePH_Click"
 						Content="Supprimer media" />
-				</StackPanel>
+                </StackPanel>
 
-				<!--  IMPORT / EXPORT  -->
-				<StackPanel
-					Grid.RowSpan="2"
+                <!--  IMPORT / EXPORT  -->
+                <StackPanel
+					Grid.RowSpan="3"
 					Grid.Column="0"
 					HorizontalAlignment="Center"
-					Orientation="Horizontal">
-					<Button
+					Orientation="Horizontal" Margin="-10,0,190,0" Grid.ColumnSpan="2">
+                    <Button
 						x:Name="btImporterBanqueImages"
 						Grid.Column="1"
 						Width="100"
@@ -264,7 +267,7 @@
 						BorderBrush="{x:Null}"
 						Click="btImporter_Click"
 						Content="Importer" />
-					<Button
+                    <Button
 						x:Name="btExporterBanqueImages"
 						Grid.Column="0"
 						Width="100"
@@ -276,42 +279,63 @@
 						BorderBrush="{x:Null}"
 						Click="btExporter_Click"
 						Content="Exporter" />
-				</StackPanel>
+                </StackPanel>
 
-				<!--  Boutons pour chaanger l'ordre des cartes  -->
-				<Button
+                <!--  Image de prévualisation  -->
+                <GroupBox
+					Name="dock_miniature"
+					Grid.RowSpan="3"
+					Grid.Column="1"
+					Width="180"
+					Height="150"
+					Padding="0"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Center"
+					FontSize="18"
+					Foreground="White"
+					Header="Miniature" Margin="0,0,0,10">
+                    <MediaElement
+						Width="160"
+						Height="120"
+						MediaEnded="m_MediaEnded"
+						Source="{Binding SelectedMap.Thumbnail}"
+						UnloadedBehavior="Manual" />
+                </GroupBox>
+
+                <!--  Boutons pour changer l'ordre des cartes  -->
+                <Button
 					x:Name="buttonUpBanqueImages"
 					Grid.Row="0"
-					Grid.Column="2"
+					Grid.Column="4"
 					Width="50"
 					Height="60"
 					Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 					Click="buttonUp_Click"
 					Content="^"
-					FontSize="24" />
-				<Button
+					FontSize="24" Margin="15,9" Grid.RowSpan="2" />
+                <Button
 					x:Name="buttonDownBanqueImages"
-					Grid.Row="1"
-					Grid.Column="2"
+					Grid.Row="2"
+					Grid.Column="4"
 					Width="50"
 					Height="60"
 					Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 					Click="buttonDown_Click"
 					Content="v"
-					FontSize="24" />
+					FontSize="24" Margin="15,9" />
 
-				<!--  Liste des cartes  -->
-				<ListBox
+                <!--  Liste des cartes  -->
+                <ListBox
 					x:Name="listboxMapsBanqueImages"
-					Grid.RowSpan="2"
-					Grid.Column="3"
+					Grid.RowSpan="3"
+					Grid.Column="5"
 					Margin="10,5"
 					DisplayMemberPath="Name"
 					FontSize="16"
 					ItemsSource="{Binding Maps}"
 					SelectionChanged="changeMap"
 					SelectionMode="Single" />
-			</Grid>
-		</Border>
-	</Grid>
+            </Grid>
+        </Border>
+    </Grid>
 </UserControl>
