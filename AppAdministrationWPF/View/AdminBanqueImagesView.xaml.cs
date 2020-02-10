@@ -112,7 +112,14 @@ namespace AppAdministrationWPF.View
         private void btAddMap_Click(object sender, RoutedEventArgs e)
         {
             // Nouvelle carte
-            int id = (listboxMapsBanqueImages.Items[listboxMapsBanqueImages.Items.Count - 1] as Map).ID + 1;
+            ListBox listboxMaps1 = listboxMapsBanqueImages;
+            int id = 0;
+            if (listboxMapsBanqueImages.Items.Count != 0)
+            {
+                id = (listboxMaps1.Items[listboxMapsBanqueImages.Items.Count - 1] as Map).ID + 1;
+            }
+
+            id = (listboxMapsBanqueImages.Items[listboxMapsBanqueImages.Items.Count - 1] as Map).ID + 1;
             Map map = Map.Blank(id);
             MapWindow window = new MapWindow(map);
 

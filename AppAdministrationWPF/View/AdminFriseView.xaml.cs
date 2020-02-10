@@ -112,7 +112,13 @@ namespace AppAdministrationWPF.View
         private void btAddMap_Click(object sender, RoutedEventArgs e)
         {
             // Nouvelle carte
-            int id = (listboxMapsFrise.Items[listboxMapsFrise.Items.Count - 1] as Map).ID + 1;
+			ListBox listboxMaps1 = listboxMapsFrise;
+            int id = 0;
+            if (listboxMapsFrise.Items.Count != 0 )
+            {
+                id = (listboxMaps1.Items[listboxMapsFrise.Items.Count - 1] as Map).ID + 1;
+            }
+                
             Map map = Map.Blank(id);
             MapWindow window = new MapWindow(map);
 
@@ -376,7 +382,7 @@ namespace AppAdministrationWPF.View
                 _viewModel.SelectedPlaceholder.Media.Add(dial.Selected);
             }
         }
-
-        #endregion media actions
+		
+		#endregion media actions
     }
 }
