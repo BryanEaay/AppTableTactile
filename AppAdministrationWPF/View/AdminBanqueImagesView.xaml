@@ -82,7 +82,7 @@
     </UserControl.Resources>
 
     <Grid
-		x:Name="GridMapBanqueImages"
+		x:Name="GridBanqueImages"
 		Height="1000"
 		VerticalAlignment="Top"
 		Background="Black">
@@ -94,21 +94,21 @@
             <ColumnDefinition Width="1665" />
         </Grid.ColumnDefinitions>
         <Canvas
-			x:Name="canvasCarteBanqueImages"
+			x:Name="canvasBanqueImages"
 			Width="1490"
 			Height="780"
 			MouseLeftButtonUp="Map_MouseLeftButtonUp"
 			MouseMove="Map_MouseMove">
             <Image
-				x:Name="CarteBanqueImages"
-				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
-				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
+				x:Name="BanqueImages"
+				Width="{Binding Path=ActualWidth, ElementName=canvasBanqueImages}"
+				Height="{Binding Path=ActualHeight, ElementName=canvasBanqueImages}"
 				Margin="0"
 				Stretch="Uniform" />
             <ItemsControl
-				x:Name="mapBackgroundBanqueImages"
-				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
-				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
+				x:Name="banqueimagesBackground"
+				Width="{Binding Path=ActualWidth, ElementName=canvasBanqueImages}"
+				Height="{Binding Path=ActualHeight, ElementName=canvasBanqueImages}"
 				HorizontalAlignment="Left"
 				VerticalAlignment="Top"
 				Background="Transparent"
@@ -135,10 +135,10 @@
             <Grid x:Name="grid1BanqueImages" ClipToBounds="True">
 
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="250*" />
-                    <ColumnDefinition Width="180*" />
-                    <ColumnDefinition Width="350*" />
-                    <ColumnDefinition Width="350*"/>
+                    <ColumnDefinition Width="279*" />
+                    <ColumnDefinition Width="201*" />
+                    <ColumnDefinition Width="719*" />
+                    <ColumnDefinition Width="62*"/>
                     <ColumnDefinition Width="80" />
                     <ColumnDefinition Width="300" />
                 </Grid.ColumnDefinitions>
@@ -156,18 +156,18 @@
 					HorizontalAlignment="Center"
 					VerticalAlignment="Top"
 					FontSize="16"
-					Foreground="White" Grid.ColumnSpan="2" Margin="144,0,345,0">
+					Foreground="White" Margin="276,0,0,0" Height="31" Width="443">
                     Modification du fond (Image ou Vidéo) :
                 </Label>
                 <StackPanel
 					Grid.Row="0"
 					Grid.Column="2"
-					Margin="15,0,216,10"
+					Margin="96,0,73,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
 					Orientation="Horizontal" Grid.ColumnSpan="2" Grid.RowSpan="2">
                     <Button
-						x:Name="btAddMapBanqueImages"
+						x:Name="btAddBanqueImages"
 						Width="150"
 						Height="35"
 						HorizontalAlignment="Center"
@@ -177,7 +177,7 @@
 						Click="btAddMap_Click"
 						Content="Ajouter fond" />
                     <Button
-						x:Name="btModifierCarteBanqueImages"
+						x:Name="btModifierBanqueImages"
 						Width="150"
 						Height="35"
 						Margin="50,0"
@@ -188,7 +188,7 @@
 						Click="btEditMap_Click"
 						Content="Modifier fond" />
                     <Button
-						x:Name="btDeleteMapBanqueImages"
+						x:Name="btDeleteBanqueImages"
 						Width="150"
 						Height="35"
 						HorizontalAlignment="Center"
@@ -206,13 +206,13 @@
 					HorizontalAlignment="Center"
 					VerticalAlignment="Top"
 					FontSize="16"
-					Foreground="White" Grid.ColumnSpan="2" Margin="124,0,325,0">
+					Foreground="White" Margin="276,0,0,0" Height="31" Width="443">
                     Modification des Médias (Images ou Vidéos) :
                 </Label>
                 <StackPanel
 					Grid.Row="2"
 					Grid.Column="2"
-					Margin="15,0,216,10"
+					Margin="96,0,73,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
 					Orientation="Horizontal" Grid.ColumnSpan="2">
@@ -302,7 +302,7 @@
 						UnloadedBehavior="Manual" />
                 </GroupBox>
 
-                <!--  Boutons pour changer l'ordre des cartes  -->
+                <!--  Boutons pour changer l'ordre des Banque d'Images  -->
                 <Button
 					x:Name="buttonUpBanqueImages"
 					Grid.Row="0"
@@ -324,7 +324,7 @@
 					Content="v"
 					FontSize="24" Margin="15,9" />
 
-                <!--  Liste des cartes  -->
+                <!--  Liste des Banque d'Images  -->
                 <ListBox
 					x:Name="listboxMapsBanqueImages"
 					Grid.RowSpan="3"

@@ -135,10 +135,10 @@
             <Grid x:Name="grid1" ClipToBounds="True">
 
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="250*" />
-                    <ColumnDefinition Width="180*" />
-                    <ColumnDefinition Width="500*" />
-                    <ColumnDefinition Width="250*"/>
+                    <ColumnDefinition Width="279*" />
+                    <ColumnDefinition Width="201*" />
+                    <ColumnDefinition Width="719*" />
+                    <ColumnDefinition Width="62*"/>
                     <ColumnDefinition Width="80" />
                     <ColumnDefinition Width="300" />
                 </Grid.ColumnDefinitions>
@@ -156,13 +156,13 @@
 					HorizontalAlignment="Center"
 					VerticalAlignment="Top"
 					FontSize="16"
-					Foreground="White" Grid.ColumnSpan="2" Margin="144,0,345,0">
+					Foreground="White" Margin="276,0,0,0" Height="31" Width="443">
                     Modification des Cartes :
                 </Label>
                 <StackPanel
 					Grid.Row="0"
 					Grid.Column="2"
-					Margin="15,0,216,10"
+					Margin="96,0,73,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
 					Orientation="Horizontal" Grid.ColumnSpan="2" Grid.RowSpan="2">
@@ -206,13 +206,13 @@
 					HorizontalAlignment="Center"
 					VerticalAlignment="Top"
 					FontSize="16"
-					Foreground="White" Grid.ColumnSpan="2" Margin="124,0,325,0">
+					Foreground="White" Margin="276,0,0,0" Height="31" Width="443">
                     Modification des Lieux :
                 </Label>
                 <StackPanel
 					Grid.Row="2"
 					Grid.Column="2"
-					Margin="15,0,216,10"
+					Margin="96,0,73,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
 					Orientation="Horizontal" Grid.ColumnSpan="2">

@@ -14,6 +14,8 @@ namespace CommonSurface.Model
 
         private string _background;
 
+        private string _thumbnail;
+
         private int _id;
 
         private string _name;
@@ -29,11 +31,12 @@ namespace CommonSurface.Model
         {
         }
 
-        public Map(int id, string name, string background)
+        public Map(int id, string name, string background,string thumbnail)
         {
             this._id = id;
             this._name = name;
             this._background = background;
+            this._thumbnail = thumbnail;
             this._placeholders = new ObservableCollection<PlaceHolder>();
         }
 
@@ -41,6 +44,7 @@ namespace CommonSurface.Model
         {
             this._id = other.ID;
             this._name = other.Name;
+            this._thumbnail = other.Thumbnail;
             this._background = other.Background;
             this._placeholders = new ObservableCollection<PlaceHolder>(other.PlaceHolders);
         }
@@ -69,12 +73,12 @@ namespace CommonSurface.Model
 
         public static Map Blank()
         {
-            return new Map(-1, "", "");
+            return new Map(-1, "", "","");
         }
 
         public static Map Blank(int id)
         {
-            return new Map(id, "", "");
+            return new Map(id, "", "","");
         }
 
         public void Copy(Map copy)
@@ -82,6 +86,7 @@ namespace CommonSurface.Model
             this._id = copy.ID;
             this._name = copy.Name;
             this._background = copy.Background;
+            this.Thumbnail = copy.Thumbnail;
             this._placeholders = new ObservableCollection<PlaceHolder>(copy.PlaceHolders);
         }
 
@@ -93,6 +98,7 @@ namespace CommonSurface.Model
                 p.Dispose();
             }
             this._placeholders = null;
+            this._thumbnail = null;
         }
 
         public override string ToString()
@@ -142,6 +148,13 @@ namespace CommonSurface.Model
         {
             get { return _name; }
             set { _name = value; OnPropertyChanged("Name"); }
+        }
+
+        [XmlElement]
+        public string Thumbnail
+        {
+            get { return _thumbnail; }
+            set { _thumbnail = value; OnPropertyChanged("Thumbnail"); }
         }
 
         [XmlArray("PlaceHolders")]

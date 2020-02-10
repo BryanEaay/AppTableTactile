@@ -82,7 +82,7 @@
     </UserControl.Resources>
 
     <Grid
-		x:Name="GridMapFrises"
+		x:Name="GridFrise"
 		Height="1000"
 		VerticalAlignment="Top"
 		Background="Black">
@@ -94,21 +94,21 @@
             <ColumnDefinition Width="1665" />
         </Grid.ColumnDefinitions>
         <Canvas
-			x:Name="canvasCarteFrise"
+			x:Name="canvasFrise"
 			Width="1490"
 			Height="780"
 			MouseLeftButtonUp="Map_MouseLeftButtonUp"
 			MouseMove="Map_MouseMove">
             <Image
-				x:Name="CarteFrise"
-				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
-				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
+				x:Name="Frise"
+				Width="{Binding Path=ActualWidth, ElementName=canvasFrise}"
+				Height="{Binding Path=ActualHeight, ElementName=canvasFrise}"
 				Margin="0"
 				Stretch="Uniform" />
             <ItemsControl
-				x:Name="mapBackgroundFrise"
-				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
-				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
+				x:Name="friseBackground"
+				Width="{Binding Path=ActualWidth, ElementName=canvasFrise}"
+				Height="{Binding Path=ActualHeight, ElementName=canvasFrise}"
 				HorizontalAlignment="Left"
 				VerticalAlignment="Top"
 				Background="Transparent"
@@ -135,10 +135,10 @@
             <Grid x:Name="grid1Frise" ClipToBounds="True">
 
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="250*" />
-                    <ColumnDefinition Width="180*" />
-                    <ColumnDefinition Width="350*" />
-                    <ColumnDefinition Width="350*"/>
+                    <ColumnDefinition Width="279*" />
+                    <ColumnDefinition Width="201*" />
+                    <ColumnDefinition Width="719*" />
+                    <ColumnDefinition Width="62*"/>
                     <ColumnDefinition Width="80" />
                     <ColumnDefinition Width="300" />
                 </Grid.ColumnDefinitions>
@@ -156,18 +156,18 @@
 					HorizontalAlignment="Center"
 					VerticalAlignment="Top"
 					FontSize="16"
-					Foreground="White" Grid.ColumnSpan="2" Margin="144,0,345,0">
-                    Modification du fond (Image ou Vidéo) :
+					Foreground="White" Margin="276,0,0,0" Height="31" Width="443">
+                    Modification des Frises :
                 </Label>
                 <StackPanel
 					Grid.Row="0"
 					Grid.Column="2"
-					Margin="15,0,216,10"
+					Margin="96,0,73,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
-					Orientation="Horizontal" Grid.ColumnSpan="2" Grid.RowSpan="2">
+					Orientation="Horizontal" Grid.RowSpan="2" Height="35" Width="550">
                     <Button
-						x:Name="btAddMapFrise"
+						x:Name="btAddFrise"
 						Width="150"
 						Height="35"
 						HorizontalAlignment="Center"
@@ -175,9 +175,9 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="btAddMap_Click"
-						Content="Ajouter fond" />
+						Content="Ajouter frise" />
                     <Button
-						x:Name="btModifierCarteFrise"
+						x:Name="btModifierFrise"
 						Width="150"
 						Height="35"
 						Margin="50,0"
@@ -186,9 +186,9 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="btEditMap_Click"
-						Content="Modifier fond" />
+						Content="Modifier frise" />
                     <Button
-						x:Name="btDeleteMapFrise"
+						x:Name="btDeleteFrise"
 						Width="150"
 						Height="35"
 						HorizontalAlignment="Center"
@@ -196,7 +196,7 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="btDeleteMap_Click"
-						Content="Supprimer fond" />
+						Content="Supprimer frise" />
                 </StackPanel>
 
                 <!--  Modification des medias -->
@@ -206,16 +206,16 @@
 					HorizontalAlignment="Center"
 					VerticalAlignment="Top"
 					FontSize="16"
-					Foreground="White" Grid.ColumnSpan="2" Margin="124,0,325,0">
-                    Modification des Médias (Images ou Vidéos) :
+					Foreground="White" Margin="276,0,0,0" Height="31" Width="443">
+                    Modification des Dates :
                 </Label>
                 <StackPanel
 					Grid.Row="2"
 					Grid.Column="2"
-					Margin="15,0,216,10"
+					Margin="96,0,73,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
-					Orientation="Horizontal" Grid.ColumnSpan="2">
+					Orientation="Horizontal" Height="35" Width="550">
                     <Button
 						x:Name="btAddPlaceFrise"
 						Width="150"
@@ -225,7 +225,7 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="btAddPlace_Click"
-						Content="Ajouter media" />
+						Content="Ajouter date" />
                     <Button
 						x:Name="btEditPlaceFrise"
 						Width="150"
@@ -236,7 +236,7 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="miEditPH_Click"
-						Content="Modifier media" />
+						Content="Modifier date" />
                     <Button
 						x:Name="btDeletePlaceFrise"
 						Width="150"
@@ -246,7 +246,7 @@
 						Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 						BorderBrush="{x:Null}"
 						Click="miDeletePH_Click"
-						Content="Supprimer media" />
+						Content="Supprimer date" />
                 </StackPanel>
 
                 <!--  IMPORT / EXPORT  -->
@@ -254,7 +254,7 @@
 					Grid.RowSpan="3"
 					Grid.Column="0"
 					HorizontalAlignment="Center"
-					Orientation="Horizontal" Margin="-10,0,190,0" Grid.ColumnSpan="2">
+					Orientation="Horizontal" Margin="-10,0,190,0" Grid.ColumnSpan="2" Width="300">
                     <Button
 						x:Name="btImporterFrise"
 						Grid.Column="1"
@@ -293,7 +293,7 @@
 					VerticalAlignment="Center"
 					FontSize="18"
 					Foreground="White"
-					Header="Miniature" Margin="0,0,0,10">
+					Header="Miniature" Margin="11,-2,10,8">
                     <MediaElement
 						Width="160"
 						Height="120"
@@ -302,13 +302,11 @@
 						UnloadedBehavior="Manual" />
                 </GroupBox>
 
-                <!--  Boutons pour changer l'ordre des cartes  -->
+                <!--  Boutons pour changer l'ordre des frises  -->
                 <Button
 					x:Name="buttonUpFrise"
 					Grid.Row="0"
 					Grid.Column="4"
-					Width="50"
-					Height="60"
 					Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 					Click="buttonUp_Click"
 					Content="^"
@@ -317,14 +315,12 @@
 					x:Name="buttonDownFrise"
 					Grid.Row="2"
 					Grid.Column="4"
-					Width="50"
-					Height="60"
 					Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 					Click="buttonDown_Click"
 					Content="v"
 					FontSize="24" Margin="15,9" />
 
-                <!--  Liste des cartes  -->
+                <!--  Liste des frises  -->
                 <ListBox
 					x:Name="listboxMapsFrise"
 					Grid.RowSpan="3"

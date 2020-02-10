@@ -77,6 +77,11 @@ namespace AppPalaisRois
             flowCarte.SelectedIndex = 0;
             flowCarte.ItemsSource = itemssource;
             listboxMaps.SelectedIndex = 0;
+
+            if (flowCarte.Items.Count < 2)
+            {
+                listboxMaps.Visibility = Visibility.Hidden;
+            }
         }
 
         #endregion Public Constructors

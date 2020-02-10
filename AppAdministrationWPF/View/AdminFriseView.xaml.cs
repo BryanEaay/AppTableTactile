@@ -23,7 +23,6 @@ namespace AppAdministrationWPF.View
         private AdminFriseViewModel _viewModel;
         private string chemin = ConfigurationManager.AppSettings["cheminFrise"];
         private string cheminLibrairie = ConfigurationManager.AppSettings["cheminLibrairieFrise"];
-        private string defautCarte = ConfigurationManager.AppSettings["cheminDefautCarte"];
         private ResourceDictionary myresourcedictionary;
         private Button selectedOne;
 
@@ -105,14 +104,20 @@ namespace AppAdministrationWPF.View
         }
 
         /// <summary>
-        /// Ajout d'une nouvelle carte
+        /// Ajout d'une nouvelle Frise
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e">     </param>
         private void btAddMap_Click(object sender, RoutedEventArgs e)
         {
-            // Nouvelle carte
-            int id = (listboxMapsFrise.Items[listboxMapsFrise.Items.Count - 1] as Map).ID + 1;
+            // Nouvelle Frise
+			ListBox listboxMaps1 = listboxMapsFrise;
+            int id = 0;
+            if (listboxMapsFrise.Items.Count != 0 )
+            {
+                id = (listboxMaps1.Items[listboxMapsFrise.Items.Count - 1] as Map).ID + 1;
+            }
+                
             Map map = Map.Blank(id);
             MapWindow window = new MapWindow(map);
 
@@ -135,7 +140,7 @@ namespace AppAdministrationWPF.View
         }
 
         /// <summary>
-        /// Suppresion d'une carte
+        /// Suppresion d'une frise
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e">     </param>
@@ -167,7 +172,7 @@ namespace AppAdministrationWPF.View
                 {
                     listboxMapsFrise.Items.Refresh();
                     DAOFrise.Save();
-                    Carte.Source = ResourceAccessor.loadImage(selected.Background);
+                    Frise.Source = ResourceAccessor.loadImage(selected.Background);
                 }
             };
             window.Show();
@@ -225,7 +230,7 @@ namespace AppAdministrationWPF.View
         }
 
         /// <summary>
-        /// Sélection de la carte par la liste
+        /// Sélection de la frise par la liste
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e">     </param>
@@ -236,18 +241,18 @@ namespace AppAdministrationWPF.View
                 _viewModel.SelectedMap = listboxMapsFrise.SelectedItem as Map;
                 _viewModel.SelectedPlaceholder = null;
 
-                Carte.Source = ResourceAccessor.loadImage(_viewModel.SelectedMap.Background);
+                Frise.Source = ResourceAccessor.loadImage(_viewModel.SelectedMap.Background);
             }
         }
 
         private void Map_MouseLeftButtonUp(object sender, MouseEventArgs e)
         {
-            // Récupération de la position de la souris par rapport à la carte
-            double x = e.GetPosition(canvasCarteFrise).X;
-            double y = e.GetPosition(canvasCarteFrise).Y;
+            // Récupération de la position de la souris par rapport à la frise
+            double x = e.GetPosition(canvasFrise).X;
+            double y = e.GetPosition(canvasFrise).Y;
 
-            // En dehors de la carte
-            if (x < 0 || x > canvasCarteFrise.ActualWidth || y < 0 || y > canvasCarteFrise.ActualHeight)
+            // En dehors de la frise
+            if (x < 0 || x > canvasFrise.ActualWidth || y < 0 || y > canvasFrise.ActualHeight)
             {
                 return;
             }
@@ -325,8 +330,8 @@ namespace AppAdministrationWPF.View
 
             if (_viewModel.Maps.Count > 0)
             {
-                mapBackgroundFrise.ItemsSource = _viewModel.Maps[0].PlaceHolders;
-                Carte.Source = ResourceAccessor.loadImage(_viewModel.Maps[0].Background);
+                friseBackground.ItemsSource = _viewModel.Maps[0].PlaceHolders;
+                Frise.Source = ResourceAccessor.loadImage(_viewModel.Maps[0].Background);
                 listboxMapsFrise.SelectedIndex = 0;
                 listboxMapsFrise.Items.Refresh();
                 listboxMapsFrise.Items.SortDescriptions.Clear();
@@ -336,8 +341,8 @@ namespace AppAdministrationWPF.View
             }
             else
             {
-                mapBackgroundFrise.ItemsSource = null;
-                Carte.Source = null;
+                friseBackground.ItemsSource = null;
+                Frise.Source = null;
                 listboxMapsFrise.SelectedIndex = -1;
             }
         }
@@ -376,7 +381,7 @@ namespace AppAdministrationWPF.View
                 _viewModel.SelectedPlaceholder.Media.Add(dial.Selected);
             }
         }
-
-        #endregion media actions
+		
+		#endregion media actions
     }
 }

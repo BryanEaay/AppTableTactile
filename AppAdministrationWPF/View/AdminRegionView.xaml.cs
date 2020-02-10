@@ -113,7 +113,12 @@ namespace AppAdministrationWPF.View
         {
             // Nouvelle carte
             ListBox listboxMaps1 = listboxMaps;
-            int id = (listboxMaps1.Items[listboxMaps.Items.Count - 1] as Map).ID + 1;
+            int id = 0;
+            if (listboxMaps.Items.Count != 0)
+            {
+                id = (listboxMaps1.Items[listboxMaps.Items.Count - 1] as Map).ID + 1;
+            }
+
             Map map = Map.Blank(id);
             MapWindow window = new MapWindow(map);
 
@@ -343,6 +348,18 @@ namespace AppAdministrationWPF.View
             }
         }
 
+		/// <summary>
+        /// Relance le média lorsque celui-ci se termine
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e">     </param>
+        private void m_MediaEnded(object sender, RoutedEventArgs e)
+        {
+            MediaElement media = sender as MediaElement;
+            media.Position = TimeSpan.FromSeconds(0);
+            media.Play();
+        }
+		
         #endregion Private Methods
 
         #region media actions
@@ -364,18 +381,6 @@ namespace AppAdministrationWPF.View
             {
                 _viewModel.SelectedPlaceholder.Media.Add(dial.Selected);
             }
-        }
-
-        /// <summary>
-        /// Relance le média lorsque celui-ci se termine
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e">     </param>
-        private void m_MediaEnded(object sender, RoutedEventArgs e)
-        {
-            MediaElement media = sender as MediaElement;
-            media.Position = TimeSpan.FromSeconds(0);
-            media.Play();
         }
 
         #endregion media actions

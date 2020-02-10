@@ -19,10 +19,9 @@
         <DataTemplate x:Key="ListTemplate">
             <Grid Width="120" Height="120">
                 <Image
-					Margin="10"
 					Panel.ZIndex="10"
 					Source="{Binding Path=Thumbnail}"
-					Stretch="Uniform" />
+					Stretch="Fill" />
             </Grid>
         </DataTemplate>
 
