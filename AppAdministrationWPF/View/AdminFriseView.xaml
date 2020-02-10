@@ -82,7 +82,7 @@
     </UserControl.Resources>
 
     <Grid
-		x:Name="GridMapFrises"
+		x:Name="GridFrise"
 		Height="1000"
 		VerticalAlignment="Top"
 		Background="Black">
@@ -94,21 +94,21 @@
             <ColumnDefinition Width="1665" />
         </Grid.ColumnDefinitions>
         <Canvas
-			x:Name="canvasCarteFrise"
+			x:Name="canvasFrise"
 			Width="1490"
 			Height="780"
 			MouseLeftButtonUp="Map_MouseLeftButtonUp"
 			MouseMove="Map_MouseMove">
             <Image
-				x:Name="CarteFrise"
-				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
-				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
+				x:Name="Frise"
+				Width="{Binding Path=ActualWidth, ElementName=canvasFrise}"
+				Height="{Binding Path=ActualHeight, ElementName=canvasFrise}"
 				Margin="0"
 				Stretch="Uniform" />
             <ItemsControl
-				x:Name="mapBackgroundFrise"
-				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
-				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
+				x:Name="friseBackground"
+				Width="{Binding Path=ActualWidth, ElementName=canvasFrise}"
+				Height="{Binding Path=ActualHeight, ElementName=canvasFrise}"
 				HorizontalAlignment="Left"
 				VerticalAlignment="Top"
 				Background="Transparent"
@@ -167,7 +167,7 @@
 					VerticalAlignment="Bottom"
 					Orientation="Horizontal" Grid.RowSpan="2" Height="35" Width="550">
                     <Button
-						x:Name="btAddMapFrise"
+						x:Name="btAddFrise"
 						Width="150"
 						Height="35"
 						HorizontalAlignment="Center"
@@ -177,7 +177,7 @@
 						Click="btAddMap_Click"
 						Content="Ajouter frise" />
                     <Button
-						x:Name="btModifierCarteFrise"
+						x:Name="btModifierFrise"
 						Width="150"
 						Height="35"
 						Margin="50,0"
@@ -188,7 +188,7 @@
 						Click="btEditMap_Click"
 						Content="Modifier frise" />
                     <Button
-						x:Name="btDeleteMapFrise"
+						x:Name="btDeleteFrise"
 						Width="150"
 						Height="35"
 						HorizontalAlignment="Center"
@@ -302,7 +302,7 @@
 						UnloadedBehavior="Manual" />
                 </GroupBox>
 
-                <!--  Boutons pour changer l'ordre des cartes  -->
+                <!--  Boutons pour changer l'ordre des frises  -->
                 <Button
 					x:Name="buttonUpFrise"
 					Grid.Row="0"
@@ -320,7 +320,7 @@
 					Content="v"
 					FontSize="24" Margin="15,9" />
 
-                <!--  Liste des cartes  -->
+                <!--  Liste des frises  -->
                 <ListBox
 					x:Name="listboxMapsFrise"
 					Grid.RowSpan="3"

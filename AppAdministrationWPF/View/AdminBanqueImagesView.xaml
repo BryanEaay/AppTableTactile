@@ -82,7 +82,7 @@
     </UserControl.Resources>
 
     <Grid
-		x:Name="GridMapBanqueImages"
+		x:Name="GridBanqueImages"
 		Height="1000"
 		VerticalAlignment="Top"
 		Background="Black">
@@ -94,19 +94,19 @@
             <ColumnDefinition Width="1665" />
         </Grid.ColumnDefinitions>
         <Canvas
-			x:Name="canvasCarteBanqueImages"
+			x:Name="canvasBanqueImages"
 			Width="1490"
 			Height="780"
 			MouseLeftButtonUp="Map_MouseLeftButtonUp"
 			MouseMove="Map_MouseMove">
             <Image
-				x:Name="CarteBanqueImages"
+				x:Name="BanqueImages"
 				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
 				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
 				Margin="0"
 				Stretch="Uniform" />
             <ItemsControl
-				x:Name="mapBackgroundBanqueImages"
+				x:Name="banqueimagesBackground"
 				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
 				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
 				HorizontalAlignment="Left"
@@ -167,7 +167,7 @@
 					VerticalAlignment="Bottom"
 					Orientation="Horizontal" Grid.RowSpan="2" Height="35" Width="550">
                     <Button
-						x:Name="btAddMapBanqueImages"
+						x:Name="btAddBanqueImages"
 						Width="150"
 						Height="35"
 						HorizontalAlignment="Center"
@@ -177,7 +177,7 @@
 						Click="btAddMap_Click"
 						Content="Ajouter fond" />
                     <Button
-						x:Name="btModifierCarteBanqueImages"
+						x:Name="btModifierBanqueImages"
 						Width="150"
 						Height="35"
 						Margin="50,0"
@@ -188,7 +188,7 @@
 						Click="btEditMap_Click"
 						Content="Modifier fond" />
                     <Button
-						x:Name="btDeleteMapBanqueImages"
+						x:Name="btDeleteBanqueImages"
 						Width="150"
 						Height="35"
 						HorizontalAlignment="Center"

@@ -23,7 +23,6 @@ namespace AppAdministrationWPF.View
         private AdminBanqueImagesViewModel _viewModel;
         private string chemin = ConfigurationManager.AppSettings["cheminBanqueImages"];
         private string cheminLibrairie = ConfigurationManager.AppSettings["cheminLibrairieBanqueImages"];
-        private string defautCarte = ConfigurationManager.AppSettings["cheminDefautCarte"];
         private ResourceDictionary myresourcedictionary;
         private Button selectedOne;
 
@@ -105,13 +104,13 @@ namespace AppAdministrationWPF.View
         }
 
         /// <summary>
-        /// Ajout d'une nouvelle carte
+        /// Ajout d'une nouvelle Banque d'Images
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e">     </param>
         private void btAddMap_Click(object sender, RoutedEventArgs e)
         {
-            // Nouvelle carte
+            // Nouvelle Banque d'Image
             ListBox listboxMaps1 = listboxMapsBanqueImages;
             int id = 0;
             if (listboxMapsBanqueImages.Items.Count != 0)
@@ -142,7 +141,7 @@ namespace AppAdministrationWPF.View
         }
 
         /// <summary>
-        /// Suppresion d'une carte
+        /// Suppresion d'une banque d'images
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e">     </param>
@@ -174,7 +173,7 @@ namespace AppAdministrationWPF.View
                 {
                     listboxMapsBanqueImages.Items.Refresh();
                     DAOBanqueImages.Save();
-                    Carte.Source = ResourceAccessor.loadImage(selected.Background);
+                    BanqueImages.Source = ResourceAccessor.loadImage(selected.Background);
                 }
             };
             window.Show();
@@ -232,7 +231,7 @@ namespace AppAdministrationWPF.View
         }
 
         /// <summary>
-        /// Sélection de la carte par la liste
+        /// Sélection de la banque d'images par la liste
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e">     </param>
@@ -243,18 +242,18 @@ namespace AppAdministrationWPF.View
                 _viewModel.SelectedMap = listboxMapsBanqueImages.SelectedItem as Map;
                 _viewModel.SelectedPlaceholder = null;
 
-                Carte.Source = ResourceAccessor.loadImage(_viewModel.SelectedMap.Background);
+                BanqueImages.Source = ResourceAccessor.loadImage(_viewModel.SelectedMap.Background);
             }
         }
 
         private void Map_MouseLeftButtonUp(object sender, MouseEventArgs e)
         {
-            // Récupération de la position de la souris par rapport à la carte
-            double x = e.GetPosition(canvasCarteBanqueImages).X;
-            double y = e.GetPosition(canvasCarteBanqueImages).Y;
+            // Récupération de la position de la souris par rapport à la banque d'images
+            double x = e.GetPosition(canvasBanqueImages).X;
+            double y = e.GetPosition(canvasBanqueImages).Y;
 
-            // En dehors de la carte
-            if (x < 0 || x > canvasCarteBanqueImages.ActualWidth || y < 0 || y > canvasCarteBanqueImages.ActualHeight)
+            // En dehors de la banque d'images
+            if (x < 0 || x > canvasBanqueImages.ActualWidth || y < 0 || y > canvasBanqueImages.ActualHeight)
             {
                 return;
             }
@@ -332,8 +331,8 @@ namespace AppAdministrationWPF.View
 
             if (_viewModel.Maps.Count > 0)
             {
-                mapBackgroundBanqueImages.ItemsSource = _viewModel.Maps[0].PlaceHolders;
-                Carte.Source = ResourceAccessor.loadImage(_viewModel.Maps[0].Background);
+                banqueimagesBackground.ItemsSource = _viewModel.Maps[0].PlaceHolders;
+                BanqueImages.Source = ResourceAccessor.loadImage(_viewModel.Maps[0].Background);
                 listboxMapsBanqueImages.SelectedIndex = 0;
                 listboxMapsBanqueImages.Items.Refresh();
                 listboxMapsBanqueImages.Items.SortDescriptions.Clear();
@@ -343,8 +342,8 @@ namespace AppAdministrationWPF.View
             }
             else
             {
-                mapBackgroundBanqueImages.ItemsSource = null;
-                Carte.Source = null;
+                banqueimagesBackground.ItemsSource = null;
+                BanqueImages.Source = null;
                 listboxMapsBanqueImages.SelectedIndex = -1;
             }
         }
