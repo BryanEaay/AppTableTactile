@@ -32,6 +32,7 @@ namespace AppPalaisRois
         private Storyboard sbHide;
         private VisiteViewModel ViewModel;
         private WindowsFormsHost whost;
+        private string CheminBoutonReturn = ConfigurationManager.AppSettings["CheminBoutonReturn"];
 
         #endregion Private Fields
 
@@ -45,7 +46,7 @@ namespace AppPalaisRois
             InitializeComponent();
 
             // Récupération du retour
-            returnVisite.Source = ResourceAccessor.loadImage("/CommonSurface;component/Resources/return.png");
+            returnVisite.Source = ResourceAccessor.loadImage(CheminBoutonReturn);
             infoVisite.Source = ResourceAccessor.loadImage(ConfigurationManager.AppSettings["cheminIconePanelInformation"]);
 
             // Initialise l'event event

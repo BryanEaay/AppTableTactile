@@ -21,6 +21,9 @@ namespace AppPalaisRois
         #region Private Fields
 
         private string chemin = ConfigurationManager.AppSettings["cheminExpoVirtuelles"];
+        private string CheminFondEcranExpo = ConfigurationManager.AppSettings["CheminFondEcranExpo"];
+        private string CheminFrise = ConfigurationManager.AppSettings["CheminFrise"];
+        private string CheminBoutonReturn = ConfigurationManager.AppSettings["CheminBoutonReturn"];
         private DiapoModel diapo = new DiapoModel();
         private ModelExpo ExpoElement = new ModelExpo();
         private int isopen = 0;
@@ -38,14 +41,14 @@ namespace AppPalaisRois
             InitializeComponent();
 
             // Récupération de la frise
-            friseExpo.Source = ResourceAccessor.loadImage("/CommonSurface;component/Resources/frise.png");
+            friseExpo.Source = ResourceAccessor.loadImage(CheminFrise);
 
             // Récupération du retour
-            returnExpo.Source = ResourceAccessor.loadImage("/CommonSurface;component/Resources/return.png");
+            returnExpo.Source = ResourceAccessor.loadImage(CheminBoutonReturn);
 
             //image de fond
             BitmapDecoder decoder = BitmapDecoder.Create(
-                new Uri("pack://application:,,,/CommonSurface;component/Resources/FondWindowSelectExpo.jpg", UriKind.RelativeOrAbsolute),
+                new Uri(CheminFondEcranExpo, UriKind.RelativeOrAbsolute),
                 BitmapCreateOptions.PreservePixelFormat,
                 BitmapCacheOption.OnLoad);
             ImageBrush brush = new ImageBrush(decoder.Frames[0]);
