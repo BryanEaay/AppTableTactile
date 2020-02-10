@@ -118,70 +118,55 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="frise" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\frise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Griffe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Griffe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sablier" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sablier.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Fond_ecran_menu\Griffe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="closebutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\closebutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>"C:\Session Grand Public\Données\Ressources\Personnalisation\Bouton_general\closebutton.png";System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Bouton_general\pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Bouton_general\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PUZZLE_DIFFICILE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PUZZLE-DIFFICILE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Puzzle\Bouton\Difficile\PUZZLE-DIFFICILE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PUZZLE_FACILE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PUZZLE-FACILE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Puzzle\Bouton\Facile\PUZZLE-FACILE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PUZZLE_MOYEN" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PUZZLE-MOYEN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Puzzle\Bouton\Moyen\PUZZLE-MOYEN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FlecheBas" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FlecheBas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Bouton_general\FlecheBas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FlecheHaut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FlecheHaut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Bouton_general\FlecheHaut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Puzzle\Bouton\gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="memory_fondecran" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\memory-fondecran.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Memory\Bouton\Configuration_arriere_plan\memory-fondecran.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="memory_jaune" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\memory-jaune.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Memory\Bouton\Moyen\memory-jaune.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="memory_rouge" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\memory-rouge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Memory\Bouton\Difficile\memory-rouge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="memory_vert" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\memory-vert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_return" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\return.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\Memory\Bouton\Facile\memory-vert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cadre1ListeExpo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cadre1ListeExpo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>"C:\Session Grand Public\Données\Ressources\Personnalisation\ExpoVirtuelle\cadre\Cadre1ListeExpo.jpg";System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cadre3ListeExpo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cadre3ListeExpo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\ExpoVirtuelle\cadre\Cadre3ListeExpo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CadreListeSlideDiapo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CadreListeSlideDiapo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FondTextBoxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FondTextBoxe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="FondWindowSelectExpo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\FondWindowSelectExpo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>C:\Session Grand Public\Données\Ressources\Personnalisation\ExpoVirtuelle\cadre\CadreListeSlideDiapo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

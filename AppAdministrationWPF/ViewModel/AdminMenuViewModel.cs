@@ -4,6 +4,15 @@ using CommonSurface.ViewModel;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System;
+using System.Configuration;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Effects;
+using System.Windows.Shapes;
+using System.Xml;
 
 namespace AppAdministrationWPF.ViewModel
 {
@@ -15,6 +24,7 @@ namespace AppAdministrationWPF.ViewModel
         private Credits _credits;
         private ObservableCollection<Icon> _icons;
         private Icon _selected;
+        private string cheminImageballError = ConfigurationManager.AppSettings["cheminImageballError"];
 
         #endregion Private Fields
 
@@ -30,14 +40,14 @@ namespace AppAdministrationWPF.ViewModel
                 if (!File.Exists(icon.Source))
                 {
                     // Image d'erreur
-                    icon.Source = "pack://application:,,,/CommonSurface;component/Resources/ballError.png";
+                    icon.Source = cheminImageballError;
                 }
             }
 
             // On vérifie pour l'icone des crédits
             if (!File.Exists(_credits.Source))
             {
-                _credits.Source = "pack://application:,,,/CommonSurface;component/Resources/ballError.png";
+                _credits.Source = cheminImageballError;
             }
         }
 

@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Threading;
+using System.Configuration;
 
 namespace AppPalaisRois
 {
@@ -30,6 +31,8 @@ namespace AppPalaisRois
         private List<object> selectedFramework = new List<object>();
         private List<PlaceHolder> selectedOnes;
         private AppFriseMainViewModel ViewModel;
+        private string CheminBoutonReturn = ConfigurationManager.AppSettings["CheminBoutonReturn"];
+        private string CheminFondEcran = ConfigurationManager.AppSettings["CheminFondEcran"];
 
         #endregion Private Fields
 
@@ -45,8 +48,8 @@ namespace AppPalaisRois
             displayedItems = new Dictionary<PlaceHolder, List<ScatterViewItem>>();
 
             //// Récupération de la frise
-            imageFond.Source = ResourceAccessor.loadImage("/CommonSurface;component/Resources/fond_sans_griffe.jpg");
-            returnFrise.Source = ResourceAccessor.loadImage("/CommonSurface;component/Resources/return.png");
+            imageFond.Source = ResourceAccessor.loadImage(CheminFondEcran);
+            returnFrise.Source = ResourceAccessor.loadImage(CheminBoutonReturn);
 
             ///* ANIM PART*/
             ///* EFFECTS RESOURCE DICTIONARY */

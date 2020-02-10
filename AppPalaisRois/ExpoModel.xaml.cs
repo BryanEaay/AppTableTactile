@@ -32,6 +32,10 @@ namespace AppPalaisRois
 
         private string cheminDefaut360 = ConfigurationManager.AppSettings["cheminDefautMiniature360"];
 
+        private string CheminFondEcranCadre = ConfigurationManager.AppSettings["CheminFondEcranCadre"];
+
+        private string CheminBoutonReturn = ConfigurationManager.AppSettings["CheminBoutonReturn"];
+
         private DiapoModel diapo = new DiapoModel();
 
         private ModelExpo ExpoElement = new ModelExpo();
@@ -57,7 +61,7 @@ namespace AppPalaisRois
             InitializeComponent();
 
             // Récupération du retour
-            returnExpo.Source = ResourceAccessor.loadImage("/CommonSurface;component/Resources/return.png");
+            returnExpo.Source = ResourceAccessor.loadImage(CheminBoutonReturn);
 
             string nameElement = "";
 
@@ -298,7 +302,7 @@ namespace AppPalaisRois
 
                         //image de fond du cadre
                         BitmapDecoder decoder = BitmapDecoder.Create(
-                        new Uri("pack://application:,,,/CommonSurface;component/Resources/FondTextBoxe.jpg", UriKind.RelativeOrAbsolute),
+                        new Uri(CheminFondEcranCadre, UriKind.RelativeOrAbsolute),
                         BitmapCreateOptions.PreservePixelFormat,
                         BitmapCacheOption.OnLoad);
                         ImageBrush brush = new ImageBrush(decoder.Frames[0]);

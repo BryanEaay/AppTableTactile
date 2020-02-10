@@ -31,6 +31,8 @@ namespace AppPalaisRois
         private ResourceDictionary myresourcedictionary;
         private Storyboard sbHide, sbHelp;
         private Temps tps = new Temps();
+        private string CheminFrise = ConfigurationManager.AppSettings["CheminFrise"];
+        private string CheminBoutonReturn = ConfigurationManager.AppSettings["CheminBoutonReturn"];
 
         #endregion Private Fields
 
@@ -48,10 +50,10 @@ namespace AppPalaisRois
             InitializeComponent();
 
             // Récupération de la frise
-            frisePuzzle.Source = ResourceAccessor.loadImage("/CommonSurface;component/Resources/frise.png");
+            frisePuzzle.Source = ResourceAccessor.loadImage(CheminFrise);
 
             // Récupération du retour
-            returnPuzzle.Source = ResourceAccessor.loadImage("/CommonSurface;component/Resources/return.png");
+            returnPuzzle.Source = ResourceAccessor.loadImage(CheminBoutonReturn);
 
             // Récupération du sablier
             sablier.Source = ResourceAccessor.loadImage("/CommonSurface;component/Resources/Sablier.png");
