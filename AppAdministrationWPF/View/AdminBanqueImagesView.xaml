@@ -135,10 +135,10 @@
             <Grid x:Name="grid1BanqueImages" ClipToBounds="True">
 
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="250*" />
-                    <ColumnDefinition Width="180*" />
-                    <ColumnDefinition Width="350*" />
-                    <ColumnDefinition Width="350*"/>
+                    <ColumnDefinition Width="279*" />
+                    <ColumnDefinition Width="201*" />
+                    <ColumnDefinition Width="781*" />
+                    <ColumnDefinition Width="0*"/>
                     <ColumnDefinition Width="80" />
                     <ColumnDefinition Width="300" />
                 </Grid.ColumnDefinitions>
@@ -156,16 +156,16 @@
 					HorizontalAlignment="Center"
 					VerticalAlignment="Top"
 					FontSize="16"
-					Foreground="White" Grid.ColumnSpan="2" Margin="144,0,345,0">
+					Foreground="White" Margin="284,0,0,0" Height="33" Width="497">
                     Modification du fond (Image ou Vidéo) :
                 </Label>
                 <StackPanel
 					Grid.Row="0"
 					Grid.Column="2"
-					Margin="15,0,216,10"
+					Margin="120,0,111,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
-					Orientation="Horizontal" Grid.ColumnSpan="2" Grid.RowSpan="2">
+					Orientation="Horizontal" Grid.RowSpan="2" Height="35" Width="550">
                     <Button
 						x:Name="btAddMapBanqueImages"
 						Width="150"
@@ -206,16 +206,16 @@
 					HorizontalAlignment="Center"
 					VerticalAlignment="Top"
 					FontSize="16"
-					Foreground="White" Grid.ColumnSpan="2" Margin="124,0,325,0">
+					Foreground="White" Margin="284,0,10,0" Height="33" Width="487">
                     Modification des Médias (Images ou Vidéos) :
                 </Label>
                 <StackPanel
 					Grid.Row="2"
 					Grid.Column="2"
-					Margin="15,0,216,10"
+					Margin="120,0,111,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
-					Orientation="Horizontal" Grid.ColumnSpan="2">
+					Orientation="Horizontal" Height="35" Width="550">
                     <Button
 						x:Name="btAddPlaceBanqueImages"
 						Width="150"
@@ -254,7 +254,7 @@
 					Grid.RowSpan="3"
 					Grid.Column="0"
 					HorizontalAlignment="Center"
-					Orientation="Horizontal" Margin="-10,0,190,0" Grid.ColumnSpan="2">
+					Orientation="Horizontal" Margin="-10,0,190,0" Grid.ColumnSpan="2" Width="300">
                     <Button
 						x:Name="btImporterBanqueImages"
 						Grid.Column="1"
@@ -293,7 +293,7 @@
 					VerticalAlignment="Center"
 					FontSize="18"
 					Foreground="White"
-					Header="Miniature" Margin="0,0,0,10">
+					Header="Miniature" Margin="11,-2,10,8">
                     <MediaElement
 						Width="160"
 						Height="120"
@@ -307,8 +307,6 @@
 					x:Name="buttonUpBanqueImages"
 					Grid.Row="0"
 					Grid.Column="4"
-					Width="50"
-					Height="60"
 					Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 					Click="buttonUp_Click"
 					Content="^"
@@ -317,8 +315,6 @@
 					x:Name="buttonDownBanqueImages"
 					Grid.Row="2"
 					Grid.Column="4"
-					Width="50"
-					Height="60"
 					Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 					Click="buttonDown_Click"
 					Content="v"
