@@ -21,7 +21,7 @@ namespace AppAdministrationWPF.View
         #region Private Fields
 
         private AdminFriseViewModel _viewModel;
-        private string chemin = ConfigurationManager.AppSettings["cheminFrise"];
+        private string chemin = ConfigurationManager.AppSettings["cheminFriseHistorique"];
         private string cheminLibrairie = ConfigurationManager.AppSettings["cheminLibrairieFrise"];
         private ResourceDictionary myresourcedictionary;
         private Button selectedOne;

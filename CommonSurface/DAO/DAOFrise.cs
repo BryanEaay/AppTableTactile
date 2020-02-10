@@ -19,7 +19,7 @@ namespace CommonSurface.DAO
 
         private static DAOFrise _instance;
         private static NotifyCollectionChangedEventHandler collectionChanged;
-        private static string defaultPath = ConfigurationManager.AppSettings["cheminFrise"];
+        private static string defaultPath = ConfigurationManager.AppSettings["cheminFriseHistorique"];
         private ObservableHashSet<Map> _maps;
 
         #endregion Private Fields
