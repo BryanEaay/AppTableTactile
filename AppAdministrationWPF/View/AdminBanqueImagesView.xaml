@@ -101,14 +101,14 @@
 			MouseMove="Map_MouseMove">
             <Image
 				x:Name="BanqueImages"
-				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
-				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
+				Width="{Binding Path=ActualWidth, ElementName=canvasBanqueImages}"
+				Height="{Binding Path=ActualHeight, ElementName=canvasBanqueImages}"
 				Margin="0"
 				Stretch="Uniform" />
             <ItemsControl
 				x:Name="banqueimagesBackground"
-				Width="{Binding Path=ActualWidth, ElementName=canvasCarte}"
-				Height="{Binding Path=ActualHeight, ElementName=canvasCarte}"
+				Width="{Binding Path=ActualWidth, ElementName=canvasBanqueImages}"
+				Height="{Binding Path=ActualHeight, ElementName=canvasBanqueImages}"
 				HorizontalAlignment="Left"
 				VerticalAlignment="Top"
 				Background="Transparent"
@@ -165,7 +165,7 @@
 					Margin="96,0,73,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
-					Orientation="Horizontal" Grid.RowSpan="2" Height="35" Width="550">
+					Orientation="Horizontal" Grid.ColumnSpan="2" Grid.RowSpan="2">
                     <Button
 						x:Name="btAddBanqueImages"
 						Width="150"
@@ -215,7 +215,7 @@
 					Margin="96,0,73,10"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Bottom"
-					Orientation="Horizontal" Height="35" Width="550">
+					Orientation="Horizontal" Grid.ColumnSpan="2">
                     <Button
 						x:Name="btAddPlaceBanqueImages"
 						Width="150"
@@ -254,7 +254,7 @@
 					Grid.RowSpan="3"
 					Grid.Column="0"
 					HorizontalAlignment="Center"
-					Orientation="Horizontal" Margin="-10,0,190,0" Grid.ColumnSpan="2" Width="300">
+					Orientation="Horizontal" Margin="-10,0,190,0" Grid.ColumnSpan="2">
                     <Button
 						x:Name="btImporterBanqueImages"
 						Grid.Column="1"
@@ -293,7 +293,7 @@
 					VerticalAlignment="Center"
 					FontSize="18"
 					Foreground="White"
-					Header="Miniature" Margin="11,-2,10,8">
+					Header="Miniature" Margin="0,0,0,10">
                     <MediaElement
 						Width="160"
 						Height="120"
@@ -302,11 +302,13 @@
 						UnloadedBehavior="Manual" />
                 </GroupBox>
 
-                <!--  Boutons pour changer l'ordre des cartes  -->
+                <!--  Boutons pour changer l'ordre des Banque d'Images  -->
                 <Button
 					x:Name="buttonUpBanqueImages"
 					Grid.Row="0"
 					Grid.Column="4"
+					Width="50"
+					Height="60"
 					Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 					Click="buttonUp_Click"
 					Content="^"
@@ -315,12 +317,14 @@
 					x:Name="buttonDownBanqueImages"
 					Grid.Row="2"
 					Grid.Column="4"
+					Width="50"
+					Height="60"
 					Background="{DynamicResource {x:Static SystemColors.ControlDarkBrushKey}}"
 					Click="buttonDown_Click"
 					Content="v"
 					FontSize="24" Margin="15,9" />
 
-                <!--  Liste des cartes  -->
+                <!--  Liste des Banque d'Images  -->
                 <ListBox
 					x:Name="listboxMapsBanqueImages"
 					Grid.RowSpan="3"
