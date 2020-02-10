@@ -118,7 +118,6 @@ namespace AppAdministrationWPF.View
                 id = (listboxMaps1.Items[listboxMapsBanqueImages.Items.Count - 1] as Map).ID + 1;
             }
 
-            id = (listboxMapsBanqueImages.Items[listboxMapsBanqueImages.Items.Count - 1] as Map).ID + 1;
             Map map = Map.Blank(id);
             MapWindow window = new MapWindow(map);
 
