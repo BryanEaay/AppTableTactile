@@ -64,16 +64,19 @@ namespace AppPalaisRois
             List<Map> temp = new List<Map>(ViewModel.Maps);
             temp.Sort((a, b) => (a.ID.CompareTo(b.ID)));
             ViewModel.Maps = new ObservableCollection<Map>(temp);
-
             StringCollection itemssource = new StringCollection();
             foreach (Map map in ViewModel.Maps)
             {
                 itemssource.Add(map.Background);
             }
-
-            flowCarte.SelectedIndex = 0;
             flowCarte.ItemsSource = itemssource;
+            flowCarte.SelectedIndex = 0;
             listboxMaps.SelectedIndex = 0;
+
+            if (flowCarte.Items.Count < 2)
+            {
+                listboxMaps.Visibility = Visibility.Hidden;
+            }
         }
 
         #endregion Public Constructors
