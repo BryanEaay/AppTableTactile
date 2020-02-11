@@ -175,34 +175,6 @@ namespace AppAdministrationWPF.View
         #region Private Methods
 
         /// <summary>
-        /// Changement de l'image de fond du menu
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e">     </param>
-        private void buttonBackground_Click(object sender, RoutedEventArgs e)
-        {
-            // Filedialog pour sélectionner une image de fond
-            OpenFileDialog fileDialog = new OpenFileDialog();
-            fileDialog.Filter = "Photos (*.jpg, *.png)|*.jpg;*.png";
-            fileDialog.FilterIndex = 0;
-            fileDialog.Multiselect = false;
-            bool? result = fileDialog.ShowDialog();
-            if (result == true)
-            {
-                // Changement de l'image affichée
-                _viewModel.Background = fileDialog.FileName;
-                imageBackground.Source = ResourceAccessor.loadImage(fileDialog.FileName);
-
-                // On sauvegarde la nouvelle image de fond dans le XML
-                XmlDocument doc = new XmlDocument();
-                doc.Load(chemin);
-                XmlNode node = doc.DocumentElement.SelectSingleNode("/DAOMenu/Background");
-                node.InnerText = _viewModel.Background;
-                doc.Save(chemin);           
-            }
-        }
-
-        /// <summary>
         /// Bouton pour sélectionner l'image ou vidéo afficher aux crédits.
         /// </summary>
         /// <param name="sender"></param>

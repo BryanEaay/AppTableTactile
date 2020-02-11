@@ -160,15 +160,11 @@
 		</StackPanel>
 
 		<!--  Configuration du reste  -->
-		<StackPanel
+        <StackPanel
 			Grid.Row="1"
 			HorizontalAlignment="Right"
 			VerticalAlignment="Center"
 			Orientation="Horizontal">
-            <Button
-				Click="buttonBackground_Click"
-				Content="Fond d'écran"
-				Style="{StaticResource adminButton}" />
             <Button
 				Click="buttonShowHideGrid_Click"
 				Content="Quadrillage"
