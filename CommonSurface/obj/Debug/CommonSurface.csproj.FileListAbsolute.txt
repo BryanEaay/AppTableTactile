@@ -1,0 +1,38 @@
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\bin\Debug\CommonSurface.dll.config
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\bin\Debug\CommonSurface.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\bin\Debug\CommonSurface.pdb
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\bin\Debug\Microsoft.Surface.Core.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\bin\Debug\Microsoft.Surface.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\bin\Debug\Microsoft.Surface.Presentation.Generic.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\bin\Debug\Microsoft.Surface.HidSupport.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\bin\Debug\Microsoft.Surface.NativeWrappers.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\bin\Debug\Microsoft.Surface.Presentation.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\obj\Debug\CommonSurface.csprojResolveAssemblyReference.cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\obj\Debug\CommonSurface.csproj.ResolveComReference.cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\obj\Debug\XAML\Effects.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\obj\Debug\CommonSurface_MarkupCompile.cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\obj\Debug\CommonSurface.g.resources
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\obj\Debug\CommonSurface.Properties.Resources.resources
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\obj\Debug\CommonSurface.csproj.GenerateResource.Cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\obj\Debug\CommonSurface.csproj.CoreCompileInputs.cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\obj\Debug\CommonSurface.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\CommonSurface\obj\Debug\CommonSurface.pdb
+C:\Session Grand Public\Application\CommonSurface\bin\Debug\CommonSurface.dll.config
+C:\Session Grand Public\Application\CommonSurface\bin\Debug\CommonSurface.dll
+C:\Session Grand Public\Application\CommonSurface\bin\Debug\CommonSurface.pdb
+C:\Session Grand Public\Application\CommonSurface\bin\Debug\Microsoft.Surface.Core.dll
+C:\Session Grand Public\Application\CommonSurface\bin\Debug\Microsoft.Surface.dll
+C:\Session Grand Public\Application\CommonSurface\bin\Debug\Microsoft.Surface.Presentation.Generic.dll
+C:\Session Grand Public\Application\CommonSurface\bin\Debug\Microsoft.Surface.HidSupport.dll
+C:\Session Grand Public\Application\CommonSurface\bin\Debug\Microsoft.Surface.NativeWrappers.dll
+C:\Session Grand Public\Application\CommonSurface\bin\Debug\Microsoft.Surface.Presentation.dll
+C:\Session Grand Public\Application\CommonSurface\obj\Debug\CommonSurface.csproj.ResolveComReference.cache
+C:\Session Grand Public\Application\CommonSurface\obj\Debug\XAML\Effects.baml
+C:\Session Grand Public\Application\CommonSurface\obj\Debug\CommonSurface_MarkupCompile.cache
+C:\Session Grand Public\Application\CommonSurface\obj\Debug\CommonSurface.g.resources
+C:\Session Grand Public\Application\CommonSurface\obj\Debug\CommonSurface.Properties.Resources.resources
+C:\Session Grand Public\Application\CommonSurface\obj\Debug\CommonSurface.csproj.GenerateResource.Cache
+C:\Session Grand Public\Application\CommonSurface\obj\Debug\CommonSurface.dll
+C:\Session Grand Public\Application\CommonSurface\obj\Debug\CommonSurface.pdb
+C:\Session Grand Public\Application\CommonSurface\obj\Debug\CommonSurface.csproj.CopyComplete
+C:\Session Grand Public\Application\CommonSurface\obj\Debug\CommonSurface.csprojAssemblyReference.cache

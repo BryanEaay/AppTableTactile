@@ -1,0 +1,122 @@
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.csprojResolveAssemblyReference.cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.csproj.ResolveComReference.cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\Import.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\Export.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\VisiteAdd.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\AdminVisiteView.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\ExpoAdd.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\AdminMemoryView.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\AdminPuzzleView.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\AdminRegionView.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\AdminMediathequeView.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\DiapoAdd.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\MediaDialog.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\PlaceHolderWindow.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AdminWindow.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\Import.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\Export.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\VisiteAdd.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\AdminVisiteView.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\ExpoAdd.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\AdminMemoryView.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\AdminPuzzleView.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\AdminRegionView.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\AdminMediathequeView.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\DiapoAdd.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\MediaDialog.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\View\PlaceHolderWindow.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\App.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AppAdministrationWPF_MarkupCompile.cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AppAdministrationWPF_MarkupCompile.lref
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AdminWindow.baml
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.g.resources
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.pdb
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\AppAdministrationWPF.exe.config
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\AppAdministrationWPF.exe
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\AppAdministrationWPF.pdb
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\AppPalaisRois.exe
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\CommonSurface.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\System.IO.Compression.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\Microsoft.Surface.Presentation.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\Microsoft.Surface.Core.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\Microsoft.Surface.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\Microsoft.Surface.HidSupport.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\Microsoft.Surface.NativeWrappers.dll
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\AppPalaisRois.pdb
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\AppPalaisRois.exe.config
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\CommonSurface.pdb
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\bin\Debug\CommonSurface.dll.config
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.Properties.Resources.resources
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.csproj.GenerateResource.Cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.csproj.CoreCompileInputs.cache
+C:\Users\milan.teles\Desktop\Table Tactile\Appli PRM sauvegarde - 30 janvier 2018\Table_Tactile_CG66\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.exe
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\AppAdministrationWPF.exe.config
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\AppAdministrationWPF.exe
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\AppAdministrationWPF.pdb
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\AppPalaisRois.exe
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\CommonSurface.dll
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\System.IO.Compression.dll
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\Microsoft.Surface.Presentation.dll
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\Microsoft.Surface.Core.dll
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\Microsoft.Surface.dll
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\Microsoft.Surface.HidSupport.dll
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\Microsoft.Surface.NativeWrappers.dll
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\AppPalaisRois.pdb
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\CommonSurface.pdb
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.csproj.ResolveComReference.cache
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\Import.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\Export.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminVisiteView.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\ExpoAdd.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminMemoryView.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminPuzzleView.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminRegionView.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminMediathequeView.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\DiapoAdd.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\MediaDialog.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\PlaceHolderWindow.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AdminWindow.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\Import.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\Export.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminVisiteView.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\ExpoAdd.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminMemoryView.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminPuzzleView.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminRegionView.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminMediathequeView.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\DiapoAdd.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\MediaDialog.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\PlaceHolderWindow.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\App.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AppAdministrationWPF_MarkupCompile.cache
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AppAdministrationWPF_MarkupCompile.lref
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AdminWindow.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.g.resources
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.Properties.Resources.resources
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.csproj.GenerateResource.Cache
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.exe
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.pdb
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminMenuView.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminMenuView.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\MenuIconEditDialog.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\MenuIconEditDialog.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\Geckofx-Winforms.dll
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\Geckofx-Core.dll
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\VisiteEditDialog.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\VisiteEditDialog.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\PanoramaEditDialog.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\PanoramaEditDialog.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\FluidKit.dll
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\MapWindow.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\MapWindow.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\AppPalaisRois.exe.config
+C:\Session Grand Public\Application\AppAdministrationWPF\bin\Debug\CommonSurface.dll.config
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.csprojAssemblyReference.cache
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\AppAdministrationWPF.csproj.CopyComplete
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminBanqueImagesView.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminFriseView.baml
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminBanqueImagesView.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\View\AdminFriseView.g.cs
+C:\Session Grand Public\Application\AppAdministrationWPF\obj\Debug\App.baml
