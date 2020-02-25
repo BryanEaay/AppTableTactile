@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B19CBE34-A981-4CF3-8933-490286AE046F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonSurface</RootNamespace>
+    <AssemblyName>CommonSurface</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>12.0.41002.1</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Surface, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Microsoft.Surface.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Surface.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Microsoft.Surface.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Surface.Presentation.Generic, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\Microsoft.Surface.Presentation.Generic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\DAOMemory.cs" />
+    <Compile Include="DAO\DAOMenu.cs" />
+    <Compile Include="DAO\DAOPuzzle.cs" />
+    <Compile Include="DAO\DAOBanqueImages.cs" />
+    <Compile Include="DAO\DAOFrise.cs" />
+    <Compile Include="DAO\DAOVisite.cs" />
+    <Compile Include="Model\BanqueImages.cs" />
+    <Compile Include="Model\Frise.cs" />
+    <Compile Include="Model\Credits.cs" />
+    <Compile Include="Model\Difficulty.cs" />
+    <Compile Include="Model\Expo.cs" />
+    <Compile Include="DAO\DAORegion.cs" />
+    <Compile Include="Model\Icon.cs" />
+    <Compile Include="Model\Map.cs" />
+    <Compile Include="Model\Panorama.cs" />
+    <Compile Include="Model\PlaceHolder.cs" />
+    <Compile Include="Model\Picture.cs" />
+    <Compile Include="Model\Visite.cs" />
+    <Compile Include="Other\ResourceAccessor.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\BoolToOpacityConverter.cs" />
+    <Compile Include="Utils\DelegateCommand.cs" />
+    <Compile Include="Utils\ObservableHashSet.cs" />
+    <Compile Include="Utils\Temps.cs" />
+    <Compile Include="ViewModel\DiapoModel.cs" />
+    <Compile Include="ViewModel\ModelVisite.cs" />
+    <Compile Include="ViewModel\ModelExpo.cs" />
+    <Compile Include="ViewModel\ViewModelBase.cs" />
+    <Compile Include="XML\XMLProvider.cs" />
+    <Compile Include="Model\Carte.cs" />
+    <Compile Include="Model\Media.cs" />
+    <Compile Include="Model\Type.cs" />
+    <Compile Include="Other\MediaManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="..\AppAdministrationWPF\app.config">
+      <Link>app.config</Link>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="XAML\Effects.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closebutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\frise.png" />
+    <Resource Include="Resources\Griffe.png" />
+    <Resource Include="Resources\return.png" />
+    <Resource Include="Resources\Sablier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\pause.png" />
+    <Resource Include="Resources\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\PUZZLE-DIFFICILE.png" />
+    <Resource Include="Resources\PUZZLE-FACILE.png" />
+    <Resource Include="Resources\PUZZLE-MOYEN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FlecheBas.png" />
+    <Resource Include="Resources\FlecheHaut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memory-fondecran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memory-jaune.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memory-rouge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\memory-vert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Cadre1ListeExpo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Cadre3ListeExpo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CadreListeSlideDiapo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FondTextBoxe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\FondWindowSelectExpo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\magnifying_glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Cour honneur.jpg" />
+    <Resource Include="Resources\Portail chapelle.jpg" />
+    <Resource Include="Resources\Salle Majorque.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ballError.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

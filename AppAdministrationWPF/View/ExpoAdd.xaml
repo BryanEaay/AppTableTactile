@@ -1,0 +1,129 @@
+﻿<Window
+	x:Class="AppAdministrationWPF.View.ExpoAdd"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="MediaDialog"
+	Width="400"
+	Height="450"
+	ResizeMode="CanResizeWithGrip"
+	ShowInTaskbar="False"
+	Topmost="True">
+	<Grid>
+		<Border
+			Margin="8,8,8,152"
+			BorderBrush="Black"
+			BorderThickness="1">
+			<MediaElement
+				x:Name="Apercu"
+				Source="{Binding Path}"
+				Stretch="Uniform"
+				Volume="0" />
+		</Border>
+		<Grid
+			Height="140"
+			Margin="8,0,8,8"
+			VerticalAlignment="Bottom">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="1*" />
+				<ColumnDefinition Width="2*" />
+				<ColumnDefinition Width="1*" />
+			</Grid.ColumnDefinitions>
+			<Label
+				Name="label1"
+				Grid.Row="0"
+				Grid.Column="0"
+				HorizontalAlignment="Right"
+				VerticalAlignment="Center"
+				Content="Chemin :" />
+			<Label
+				Name="lblName"
+				Grid.Row="1"
+				Grid.Column="0"
+				HorizontalAlignment="Right"
+				VerticalAlignment="Center"
+				Content="Titre :" />
+			<Label
+				Name="lblDescription"
+				Grid.Row="2"
+				Grid.Column="0"
+				HorizontalAlignment="Right"
+				VerticalAlignment="Top"
+				Content="Description :" />
+
+			<TextBox
+				Name="txtPath"
+				Grid.Row="0"
+				Grid.Column="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Center"
+				Text="{Binding Path}" />
+			<TextBox
+				Name="txtName"
+				Grid.Row="1"
+				Grid.Column="1"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Center"
+				MaxLines="100" />
+			<TextBox
+				Name="Description"
+				Grid.Row="2"
+				Grid.Column="1"
+				MinHeight="60"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Center"
+				AcceptsReturn="True"
+				AcceptsTab="True"
+				SpellCheck.IsEnabled="True"
+				TextWrapping="Wrap" />
+
+			<ComboBox
+				Name="cbxType"
+				Grid.Row="1"
+				Grid.Column="2"
+				Width="80"
+				Height="22"
+				HorizontalAlignment="Stretch">
+				<ComboBoxItem Name="Photo">Photo</ComboBoxItem>
+				<ComboBoxItem Name="Video" IsSelected="True">Video</ComboBoxItem>
+			</ComboBox>
+
+			<Button
+				Name="btOpen"
+				Grid.Column="2"
+				Width="75"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Center"
+				Click="btOpen_Click"
+				Content="Parcourir..." />
+			<StackPanel
+				Name="stackPanel1"
+				Grid.Row="4"
+				Grid.Column="0"
+				Grid.ColumnSpan="3"
+				HorizontalAlignment="Right"
+				VerticalAlignment="Top"
+				Orientation="Horizontal">
+				<Button
+					Name="btOK"
+					Width="60"
+					Margin="2"
+					Click="btOK_Click"
+					Content="OK"
+					FontWeight="Bold" />
+				<Button
+					Name="btCancel"
+					Width="60"
+					Margin="2"
+					Click="btCancel_Click"
+					Content="Annuler" />
+			</StackPanel>
+		</Grid>
+	</Grid>
+</Window>

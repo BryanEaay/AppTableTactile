@@ -1,0 +1,9 @@
+﻿<Application
+	x:Class="AppAdministrationWPF.App"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	StartupUri="AdminWindow.xaml">
+	<Application.Resources>
+        <FontFamily x:Key="Luciole-Regular">pack://application:,,,/Fonts/#Luciole</FontFamily>
+    </Application.Resources>
+</Application>
